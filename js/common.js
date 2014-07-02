@@ -139,7 +139,7 @@ $(function() {
 
     /*Personal a: opacity*/
 
-    $('.personal a, .photos_wrap a, .mini_photos a').hover(function() {
+    $('.personal a, .photos_wrap a, .mini_photos a, .video_wrap a').hover(function() {
         $('.opacity_img', this).stop(true, true).fadeIn(300);
     }, function() {
         $('.opacity_img', this).stop(true, true).fadeOut(300);
@@ -271,6 +271,7 @@ $(function() {
             $('.opacity_popup, .popup_order').fadeOut();
             $('.opacity_popup, .popup_pay_card').fadeOut();
             $('.opacity_popup, .popup_order_success').fadeOut();
+            $('.opacity_popup, .img_wrapper').fadeOut();
         }
     });
 
@@ -359,10 +360,11 @@ function setTravelWrapHeight() {
     $('.slide_right').css('top', (slideHeight/2-15)+'px');
     $('.text_slide > .slide_left').css('top', (slideHeight/2-15)+'px');
     $('.text_rel .slide_left').css('top', (slideHeight/2-106-15)+'px');
-    $('.popup_faq').css({'height': (bodyHeight-60)+'px'})
+    $('.popup_faq, .popup_tours').css({'height': (bodyHeight-60)+'px'})
 
     $('.popup_faq .scroll_wrap, .faq_content').height(bodyHeight-118);
-    $('.faq_content').jScrollPane({
+    $('.scroll_tour_wrap').height(bodyHeight-250);
+    $('.faq_content, .scroll_tour_wrap').jScrollPane({
         showArrows:false
     });
 }

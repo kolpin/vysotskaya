@@ -7,14 +7,14 @@
         <?php endif;?>
         <nav class="main_nav">
             <ul>
-                <li><a href="#" <?php if ($_SERVER['PHP_SELF'] == '/travel.php' || $_SERVER['PHP_SELF'] == '/photos.php' || $_SERVER['PHP_SELF'] == '/region.php' || $_SERVER['PHP_SELF'] == '/reviews.php'): ?>class="active"<?php endif?>>Путешествия</a>
-                <?php if ($_SERVER['PHP_SELF'] == '/travel.php' || $_SERVER['PHP_SELF'] == '/photos.php' || $_SERVER['PHP_SELF'] == '/region.php' || $_SERVER['PHP_SELF'] == '/reviews.php' || $_SERVER['PHP_SELF'] == '/certificate.php'): ?>
+                <li><a href="#" <?php if ($_SERVER['PHP_SELF'] == '/travel.php' || $_SERVER['PHP_SELF'] == '/photos.php' || $_SERVER['PHP_SELF'] == '/region.php' || $_SERVER['PHP_SELF'] == '/reviews.php' || $_SERVER['PHP_SELF'] == '/travel_images.php'): ?>class="active"<?php endif?>>Путешествия</a>
+                <?php if ($_SERVER['PHP_SELF'] == '/video.php' || $_SERVER['PHP_SELF'] == '/travel.php' || $_SERVER['PHP_SELF'] == '/photos.php' || $_SERVER['PHP_SELF'] == '/region.php' || $_SERVER['PHP_SELF'] == '/reviews.php' || $_SERVER['PHP_SELF'] == '/certificate.php' || $_SERVER['PHP_SELF'] == '/travel_images.php'): ?>
                     <ul class="subs">
                         <li>
                             <a href="#" <?php if($_SERVER['PHP_SELF'] == '/certificate.php'): ?>class="active"<?php endif; ?>>Сертификат</a>
                         </li>
                         <li>
-                            <a href="#">Видео</a>
+                            <a href="#" <?php if($_SERVER['PHP_SELF'] == '/video.php'): ?>class="active"<?php endif; ?>>Видео</a>
                         </li>
                     </ul>
                 <?php endif;?>
@@ -26,7 +26,7 @@
         </nav>
         <nav class="socials">
             <ul>
-                <li><a href="#" class="tripadvisor"></a></li>
+                <li class="no_margin_left"><a href="#" class="tripadvisor"></a></li>
                 <li><a href="#" class="vk"></a></li>
                 <li><a href="#" class="fb"></a></li>
                 <li><a href="#" class="instagram"><span>491</span></a></li>

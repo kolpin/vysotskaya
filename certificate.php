@@ -102,8 +102,5 @@
     <?php include 'side-panel.php'?>
 </div>
 <?php include 'popup.php'?>
-<div class="img_wrapper">
-
-</div>
 </body>
 </html>

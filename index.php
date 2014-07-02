@@ -46,10 +46,13 @@
                     <li><a href="order_success.php">Заказ оформлен</a></li>
                     <li><a href="travel.php">Путешествия</a></li>
                     <li><a href="photos.php">Фотографии</a></li>
+                    <li><a href="video.php">Видео</a></li>
                     <li><a href="region.php">Регион</a></li>
                     <li><a href="reviews.php">Отзывы</a></li>
                     <li><a href="cost.php">Стоимость поездки</a></li>
                     <li><a href="certificate.php">Сертификат</a></li>
+                    <li><a href="travel_images.php">Путешествия(Плитка)</a></li>
+                    <li><a href="travel_map.php">Путешествия(Карта)</a></li>
                     <!--                    <li><a href=""></a></li>-->
                 </ul>
             </div>

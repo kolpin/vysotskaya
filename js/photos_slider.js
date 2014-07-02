@@ -2,9 +2,6 @@ var itemImg = 1;
 var click = true;
 var start = false;
 $(function() {
-
-
-
     $(window).on('resize', function () {
         resizeInnerAndPhotoSlider();
     }).trigger("resize");

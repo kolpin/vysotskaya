@@ -129,7 +129,7 @@ header {
 }
 #logo, #logo_error {
     display: block; position: absolute;
-    top: 14px; left: 30px;
+    top: 14px; left: 23px;
     width: 68px;
     height: 57px;
     background: url(../img/logo.png) no-repeat;
@@ -156,6 +156,7 @@ a#logo:hover {
 .header_main nav.main_nav > ul li a {
     font-family: "PTSans-NarrowBold"; font-size: 14px; color: #5e5e5e;
     text-decoration: none; text-transform: uppercase; line-height: 14px;
+    letter-spacing: 1px;
 }
 /*.header_main nav.main_nav ul li.subs a {*/
     /*font-family: "PTSans-Regular";*/
@@ -185,8 +186,11 @@ a#logo:hover {
 }
 .header_main nav.socials ul li {
     display: inline-block;
-    margin-left: 28px;
+    margin-left: 26px;
     height: 17px;
+}
+.header_main nav.socials ul li.no_margin_left {
+    margin-left: 0;
 }
 .header_main nav.socials ul li a {
     display: block;
@@ -260,6 +264,9 @@ a#logo:hover {
     width: 420px;
     margin-left: 200px;
 }
+.item_preview .img_slide .content .article i {
+    font-family: "PTSans-Italic"; font-style: normal;
+}
 .item_preview .img_slide .content .earliest_date {
     position: relative; float: right;
     width: 100px;
@@ -330,7 +337,7 @@ a#logo:hover {
 }
 .item_preview .text_slide .slide_left {
     position: absolute;
-    left: 30px;
+    left: 23px;
     width: 30px;
     height: 30px;
     background: url(../img/slide-left.png) no-repeat;
@@ -416,7 +423,7 @@ a#logo:hover {
 }
 .item_preview .text_slide .content .center .open_now {
     display: none; position: absolute;
-    bottom: -60px; right: -80px;
+    bottom: -60px; right: -90px;
 }
 .item_preview .text_slide .content .right {
     display: none; position: relative; float: right;
@@ -632,7 +639,7 @@ h1.name_personal a:hover {
 .personal_img {
     position: relative; float: left;
     width: 140px;
-    margin-left: 30px;
+    margin-left: 23px;
 }
 .personal_description {
     position: relative; float: left;
@@ -738,7 +745,8 @@ h1.name_personal a:hover {
 
 
 .cooperation {
-    width: 1061px;
+    width: 1115px;
+    padding-left: 23px;
 }
 .cooperation .contact_us {
     border: 1px solid #cccccc;
@@ -769,7 +777,7 @@ h1.name_personal a:hover {
 .cooperation .text_blocks {
     position: relative; float: left;
     width: 840px;
-    margin-left: 57px;
+    margin-left: 66px;
 }
 .cooperation .text_blocks .bl_wrap {
     border-bottom: 1px solid #cccccc;
@@ -932,7 +940,7 @@ h1.name_personal a:hover {
 .padding_form h1.title_popup a:hover {
     background-position: 0 -30px;
 }
-.padding_form div {
+.padding_form > div {
     position: relative;
     /*height: 40px;*/
     margin-bottom: 29px;
@@ -1600,7 +1608,7 @@ h1.name_personal a:hover {
 
 .form_contacts {
     position: relative; float: left;
-    margin-left: 30px;
+    margin-left: 23px;
 }
 .form_contacts table {
     width: 100%;
@@ -1839,11 +1847,11 @@ h1.title_travel a:hover {
     font-family: "PTSans-Italic";
     font-style: normal;
 }
-.travel_nav {
+.travel_nav, .videos_nav {
     position: relative; float: right;
     width: 134px;
 }
-.travel_nav ul {
+.travel_nav ul, .videos_nav ul {
     display: block; position: relative;
     margin: 0; padding: 0;
     list-style: none;
@@ -1851,15 +1859,15 @@ h1.title_travel a:hover {
 .travel_nav.dark_links ul {
     margin-bottom: 117px;
 }
-.travel_nav ul li {
+.travel_nav ul li, .videos_nav ul li {
     display: block; position: relative;
     margin-bottom: 20px;
 }
-.travel_nav ul li a {
+.travel_nav ul li a, .videos_nav ul li a {
     color: #ffffff;
     text-decoration: none;
 }
-.travel_nav.dark_links ul li a {
+.travel_nav.dark_links ul li a, .videos_nav ul li a {
     color: #5e5e5e;
 }
 .travel_nav ul li a i {
@@ -1867,7 +1875,7 @@ h1.title_travel a:hover {
     width: 19px;
     margin-right: 11px;
 }
-.travel_nav.dark_links ul li a:hover, .travel_nav.dark_links ul li a.active {
+.travel_nav.dark_links ul li a:hover, .travel_nav.dark_links ul li a.active,  .videos_nav ul li a:hover,  .videos_nav ul li a.active {
     color: #99c65f;
 }
 .travel_nav ul li a:hover, .travel_nav ul li a.active {
@@ -1946,19 +1954,19 @@ h1.title_travel a:hover {
     background-position: 0 -14px;
 }
 
-.photos_wrap {
+.photos_wrap, .video_wrap {
     position: relative; float: left;
     width: 616px;
-    margin-left: 30px;
+    margin-left: 23px;
     margin-bottom: 75px;
 }
-.photos_wrap > a {
+.photos_wrap > a, .video_wrap > a {
     float: left;
     width: 140px; height: 112px;
     margin: 0 14px 14px 0;
     text-decoration: none;
 }
-.photos_wrap > a span.opacity_img {
+.photos_wrap > a span.opacity_img, .video_wrap > a span.opacity_img {
     display: none; position: absolute;
     top: 0; left: 0;
     width: 140px; height: 112px;
@@ -1974,6 +1982,16 @@ h1.title_travel a:hover {
     z-index: 2;
 }
 .photos_wrap > a:hover span.see {
+    display: block;
+}
+.video_wrap > a span.play {
+    display: none; position: absolute;
+    top: 40px; left: 55px;
+    width: 30px; height: 30px;
+    background: url(../img/play.png) no-repeat;
+    z-index: 2;
+}
+.video_wrap > a:hover span.play {
     display: block;
 }
 .features {
@@ -1996,7 +2014,7 @@ h1.title_travel a:hover {
 .mini_photos {
     position: relative; float: left;
     width: 128px;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 23px;
 }
 .mini_photos a {
     display: block; position: relative; float: left;
@@ -2201,7 +2219,7 @@ h1.title_travel a:hover {
 .comments_wrap {
     position: relative; float: left;
     width: 650px;
-    margin-left: 30px;
+    margin-left: 23px;
 }
 .item_comment {
     position: relative;
@@ -2250,7 +2268,7 @@ h1.title_travel a:hover {
 .bid_wrapper {
     position: relative; float: left;
     width: 153px;
-    margin-left: 30px;
+    margin-left: 23px;
 }
 .bid_wrapper .price_hold {
     border: 1px solid #cccccc;
@@ -2323,7 +2341,7 @@ h1.title_travel a:hover {
 .description_cost {
     position: relative; float: left;
     width: 440px;
-    margin-left: 66px;
+    margin-left: 74px;
 }
 .description_cost .text_hold {
     border-bottom: 1px solid #cccccc;
@@ -2579,7 +2597,7 @@ h1.title_travel a:hover {
 }
 .cert_questions {
     position: relative;
-    padding-left: 30px;
+    padding-left: 23px;
     margin-bottom: 45px;
 }
 .cert_questions .item {
@@ -2605,4 +2623,494 @@ h1.title_travel a:hover {
 }
 .fast_buy ol li {
     margin: 0 0 13px 0;
+}
+
+.img_wrapper {
+    display: none;
+    position: fixed;
+    top: 50%; left: 50%;
+    width: 680px; height: 454px;
+    margin: -227px 0 0 -340px;
+    background: #ffffff;
+    z-index: 101;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .2);
+}
+
+.img_wrapper .close_img {
+    display: block; position: absolute;
+    top: 20px; right: 20px;
+    width: 30px; height: 30px;
+    background: url(../img/close.png) no-repeat;
+    z-index: 10;
+}
+.img_wrapper .close_img:hover {
+    background-position: 0 -30px;
+}
+.img_wrapper .opacity {
+    display: none; position: absolute;
+    top: 0; left: 0;
+    width: 680px; height: 454px;
+    background: #000;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    z-index: 9;
+}
+.img_wrapper img {
+    display: block; position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.img_wrapper img.active {
+    z-index: 5;
+    opacity: 1;
+}
+.img_wrapper .half_opacity_right {
+    position: absolute;
+    top: 0; right: 0;
+    width: 117px; height: 100%;
+    background: url(../img/right_half_opacity.png) -117px 0 repeat-y;
+    z-index: 9;
+}
+.img_wrapper .half_opacity_right:hover {
+    background-position: 0 0;
+}
+.img_wrapper .next {
+    display: block; position: absolute;
+    top: 50%; right: 20px;
+    width: 30px; height: 30px;
+    background: url(../img/next_white.png) no-repeat;
+    margin-top: -15px;
+    z-index: 10;
+}
+.img_wrapper .next:hover {
+    background-position: 0 -30px;
+}
+.img_wrapper .half_opacity_left {
+    position: absolute;
+    top: 0; left: 0;
+    width: 117px; height: 100%;
+    background: url(../img/left_half_opacity.png) -117px 0 repeat-y;
+    z-index: 9;
+}
+.img_wrapper .half_opacity_left:hover {
+    background-position: 0 0;
+}
+.img_wrapper .prev {
+    display: block; position: absolute;
+    top: 50%; left: 20px;
+    width: 30px; height: 30px;
+    background: url(../img/back_white.png) no-repeat;
+    margin-top: -15px;
+    z-index: 10;
+}
+.img_wrapper .prev:hover {
+    background-position: 0 -30px;
+}
+
+.video_frame {
+    display: none;
+    position: fixed;
+    top: 50%; left: 50%;
+    width: 680px; height: 385px;
+    margin: -193px 0 0 -340px;
+    background: #000;
+    z-index: 101;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .2);
+}
+
+.video_frame .close_img {
+    display: block; position: absolute;
+    top: 20px; right: 20px;
+    width: 30px; height: 30px;
+    background: url(../img/close.png) no-repeat;
+    z-index: 10;
+}
+.video_frame .close_img:hover {
+    background-position: 0 -30px;
+}
+.video_frame .opacity {
+    display: none; position: absolute;
+    top: 0; left: 0;
+    width: 680px; height: 385px;
+    background: #000;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    z-index: 9;
+}
+.video_frame img {
+    display: block; position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.video_frame img.active {
+    z-index: 5;
+    opacity: 1;
+}
+.video_frame .half_opacity_right {
+    position: absolute;
+    top: 0; right: 0;
+    width: 117px; height: 100%;
+    background: url(../img/right_half_opacity.png) -117px 0 repeat-y;
+    z-index: 9;
+}
+.video_frame .half_opacity_right:hover {
+    background-position: 0 0;
+}
+.video_frame .next {
+    display: block; position: absolute;
+    top: 50%; right: 20px;
+    width: 30px; height: 30px;
+    background: url(../img/next_white.png) no-repeat;
+    margin-top: -15px;
+    z-index: 10;
+}
+.video_frame .next:hover {
+    background-position: 0 -30px;
+}
+.video_frame .half_opacity_left {
+    position: absolute;
+    top: 0; left: 0;
+    width: 117px; height: 100%;
+    background: url(../img/left_half_opacity.png) -117px 0 repeat-y;
+    z-index: 9;
+}
+.video_frame .half_opacity_left:hover {
+    background-position: 0 0;
+}
+.video_frame .prev {
+    display: block; position: absolute;
+    top: 50%; left: 20px;
+    width: 30px; height: 30px;
+    background: url(../img/back_white.png) no-repeat;
+    margin-top: -15px;
+    z-index: 10;
+}
+.video_frame .prev:hover {
+    background-position: 0 -30px;
+}
+
+.select_wrap {
+    position: relative;
+    width: 840px;
+    height: 14px;
+    margin: 28px auto 20px auto;
+}
+.select_wrap ul.select_nav {
+    position: relative; float: left;
+    margin: 0 0 0 30px; padding: 0;
+    list-style: none;
+}
+.select_wrap ul.select_nav li {
+    display: block; float: left;
+    margin-right: 28px;
+}
+.select_wrap ul.select_nav li a {
+    display: block; position: relative;
+    height: 14px;
+}
+.select_wrap ul.select_nav li a.img {
+    width: 14px;
+    background: url(../img/select_img.png) no-repeat;
+}
+.select_wrap ul.select_nav li a.map {
+    width: 14px;
+    background: url(../img/select_map.png) no-repeat;
+}
+.select_wrap ul.select_nav li a.calendar {
+    width: 16px;
+    background: url(../img/select_calendar.png) no-repeat;
+}
+.select_wrap ul.select_nav li a:hover, .select_wrap ul.select_nav li a.active {
+    background-position: 0 -14px;
+}
+
+.am-wrapper {
+    float:left;
+    position:relative;
+    overflow:hidden;
+}
+.am-wrapper img {
+    position:absolute;
+    outline:none;
+}
+.am-container a {
+    text-decoration: none;
+}
+.am-container a .title {
+    display: none;
+    position: absolute;
+    top: 50%; left: 50%;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+.am-container a .title i {
+    display: block; position: relative;
+    width: 30px; height: 30px;
+    background: url(../img/see_all.png) no-repeat;
+    margin: 0 auto 11px auto;
+}
+.am-container a .opacity {
+    display: none; position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #000;
+    opacity: 0.4; filter: alpha(opacity=40);
+}
+.am-container a:hover .title, .am-container a:hover .opacity {
+    display: inline;
+}
+.am-container a .title:hover {
+    color: #aef058;
+}
+.am-container a .title:hover i {
+    background-position: 0 -30px;
+}
+.am-container a.soon .title, .am-container a.soon .opacity {
+    display: inline;
+}
+.am-container a .new {
+    display: block; position: absolute;
+    top: 0; left: 0;
+    width: 64px; height: 64px;
+    background: url(../img/new.png) no-repeat;
+}
+.am-container a .weekend {
+    display: block; position: absolute;
+    top: 0; left: 0;
+    width: 92px; height: 92px;
+    background: url(../img/weekend.png) no-repeat;
+}
+
+.map_wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.abs_wrapper {
+    position: absolute;
+    top: 50%; left: 50%;
+}
+.drag_image {
+    display: block; position: relative;
+    width: 1000px; height: 735px;
+    background: url(../img/map_image.png) no-repeat;
+}
+.drag_image .hover_country {
+    display: block; position: absolute;
+    text-decoration: none;
+    color: #5e5e5e;
+}
+.drag_image .hover_country span {
+    position: absolute;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.drag_image .hover_country.ice {
+    top: 60px; left: 165px;
+    width: 75px; height: 63px;
+    background: url(../img/country/iceland_hover.png) 0 -63px no-repeat;
+}
+.drag_image .hover_country.ice span {
+    top: 32px; left: 33px;
+}
+
+.drag_image .hover_country.swe {
+     top: 51px; left: 399px;
+     width: 102px; height: 246px;
+     background: url(../img/country/sweden_hover.png) 0 -246px no-repeat;
+ }
+.drag_image .hover_country.swe span {
+    top: 125px; left: 28px;
+}
+
+.drag_image .hover_country.lat {
+    top: 241px; left: 490px;
+    width: 70px; height: 40px;
+    background: url(../img/country/latvia_hover.png) 0 -40px no-repeat;
+}
+.drag_image .hover_country.lat span {
+    top: 11px; left: 44px;
+}
+
+.drag_image .hover_country.bri {
+    top: 187px; left: 204px;
+    width: 94px; height: 172px;
+    background: url(../img/country/great_britain_hover.png) 0 -172px no-repeat;
+}
+.drag_image .hover_country.bri span {
+    top: 105px; left: 57px;
+    line-height: 1;
+}
+
+.drag_image .hover_country.bel {
+    top: 355px; left: 300px;
+    width: 40px; height: 35px;
+    background: url(../img/country/belgium_hover.png) 0 -35px no-repeat;
+}
+.drag_image .hover_country.bel span {
+    top: 5px; left: 20px;
+}
+
+.drag_image .hover_country.geo {
+    top: 433px; left: 747px;
+    width: 96px; height: 39px;
+    background: url(../img/country/georgia_hover.png) 0 -39px no-repeat;
+}
+.drag_image .hover_country.geo span {
+    top: 11px; left: 33px;
+}
+
+.drag_image .hover_country.slo {
+    top: 441px; left: 414px;
+    width: 71px; height: 76px;
+    background: url(../img/country/slovakia_hover.png) 0 -76px no-repeat;
+}
+.drag_image .hover_country.slo span {
+    top: -5px; left: 17px;
+    line-height: 1;
+}
+
+.drag_image .hover_country.ita {
+    top: 438px; left: 331px;
+    width: 151px; height: 184px;
+    background: url(../img/country/italy_hover.png) 0 -184px no-repeat;
+}
+.drag_image .hover_country.ita span {
+    top: 63px; left: 71px;
+}
+
+.drag_image .hover_country.fra {
+     top: 358px; left: 209px;
+     width: 156px; height: 177px;
+     background: url(../img/country/france_hover.png) 0 -177px no-repeat;
+ }
+.drag_image .hover_country.fra span {
+    top: 70px; left: 55px;
+}
+
+.drag_image .hover_country.spa {
+    top: 451px; left: 121px;
+    width: 169px; height: 141px;
+    background: url(../img/country/spain_hover.png) 0 -141px no-repeat;
+}
+.drag_image .hover_country.spa span {
+    top: 70px; left: 45px;
+}
+
+.drag_image .hover_country.mar {
+    top: 596px; left: 1px;
+    width: 191px; height: 103px;
+    background: url(../img/country/marokko_hover.png) 0 -103px no-repeat;
+}
+.drag_image .hover_country.mar span {
+    top: 45px; left: 92px;
+}
+
+.drag_image .hover_country.isr {
+    top: 641px; left: 732px;
+    width: 16px; height: 50px;
+    background: url(../img/country/israel_hover.png) 0 -50px no-repeat;
+}
+.drag_image .hover_country.isr span {
+    top: 26px; left: 8px;
+}
+.poly {
+    cursor: pointer;
+}
+.names_country {
+    position: absolute;
+    font-size: 12px;
+    color: #5e5e5e;
+}
+.names_country.fin {
+    left: 521px;
+    top: 126px;
+}
+.names_country.rus {
+    left: 665px;
+    top: 200px;
+}
+.names_country.pol {
+    left: 463px;
+    top: 344px;
+}
+.names_country.ukr {
+    left: 603px;
+    top: 374px;
+}
+.names_country.swi {
+    left: 352px;
+    line-height: 1;
+    top: 418px;
+}
+.names_country.rom {
+    left: 531px;
+    top: 442px;
+}
+.names_country.gre {
+    left: 524px;
+    top: 557px;
+}
+.names_country.tur {
+    left: 694px;
+    top: 531px;
+}
+.names_country.arm {
+    left: 829px;
+    top: 465px;
+}
+.names_country.gonk {
+    left: 936px;
+    top: 535px;
+}
+
+.popup_tours {
+    /*display: block;*/
+    top: 30px; left: 50%;
+    width: 506px;
+    margin-left: -253px;
+    background: #ffffff;
+    z-index: 101;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .2);
+}
+
+.popup_tours .scroll {
+    position: relative;
+}
+.scroll_tour_wrap {
+    width: 100%; /* Ширина видимой области*/
+    overflow: auto; /* Если отключены скрипты это правило позволит отобразить обычный скролл */
+}
+.padding_form h1.title_popup.title_country_h1 {
+    margin: 0 0 48px 0;
+}
+ul.schedule {
+    margin: 0; padding: 0;
+    list-style: none;
+}
+ul.schedule li {
+    display: block; position: relative;
+    margin: 0 0 26px 0;
+}
+ul.schedule li a {
+    color: #5e5e5e;
+    text-decoration: none;
+}
+ul.schedule li a i {
+    display: inline-block;
+    width: 14px; height: 14px;
+    background: url(../img/open-now.png) no-repeat;
+    margin-left: 6px;
+    vertical-align: -4px;
+}
+ul.schedule li a:hover {
+    color: #99c65f;
+}
+ul.schedule li a:hover i {
+    background-position: 0 -14px;
+}
+ul.schedule li p {
+    font-size: 12px; line-height: 12px;
+    margin: 7px 0;
 }

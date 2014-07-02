@@ -2,6 +2,61 @@
 <html lang="ru">
 <head>
     <?php include 'head.php'?>
+    <script>
+        var current_img = 0,
+            click = true;
+        $(function() {
+            $('.mini_photos a').on("click", function() {
+                $('.opacity_popup').show();
+                current_img = $(this).data('img');
+                showMiniGallery(current_img);
+                $('.img_wrapper').fadeIn();
+                return false;
+            });
+            $('.img_wrapper .close_img').hover(function() {
+                $('.img_wrapper .opacity').stop(true, true).fadeIn(300);
+            }, function() {
+                $('.img_wrapper .opacity').stop(true, true).fadeOut(300);
+            });
+            $('.img_wrapper .close_img').on("click", function() {
+                $('.opacity_popup, .img_wrapper').fadeOut();
+                return false;
+            });
+            $('.img_wrapper .next').on("click", function() {
+                if (!click) return false;
+                click = false;
+                current_img++;
+
+                if (current_img > $('.img_wrapper img').length) current_img = 1;
+                showMiniGallery(current_img);
+                return false;
+            });
+            $('.img_wrapper .prev').on("click", function() {
+                if (!click) return false;
+                click = false;
+                current_img--;
+
+                if (current_img < 1) current_img = $('.img_wrapper img').length;
+                showMiniGallery(current_img);
+                return false;
+            });
+        });
+        function showMiniGallery(img) {
+            $('.img_wrapper img').removeClass('active');
+            $('.img_wrapper img[data-image='+img+']').addClass('active');
+
+            $('.img_wrapper img').stop().animate({opacity: 0}, 500, function() {});
+            $('.img_wrapper img[data-image='+img+']').stop().animate({opacity: 1}, 500, function() {
+                click = true;
+            });
+        }
+        $.preloadImages = function () {
+            var images = (typeof arguments[0] == 'object') ? arguments[0] : arguments;
+            for (var i = 0; i < images.length; i++) {
+                $("<img>").attr("src", images[i]);
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="main">
@@ -13,37 +68,37 @@
                 </div>
                 <div class="relative">
                     <div class="mini_photos">
-                        <a href="#">
+                        <a href="#" data-img="1">
                             <img src="img/tmp/mi1.png" />
                             <span class="opacity_img"></span>
                             <span class="see"></span>
                         </a>
-                        <a href="#">
+                        <a href="#" data-img="2">
                             <img src="img/tmp/mi2.png" />
                             <span class="opacity_img"></span>
                             <span class="see"></span>
                         </a>
-                        <a href="#">
+                        <a href="#" data-img="3">
                             <img src="img/tmp/mi3.png" />
                             <span class="opacity_img"></span>
                             <span class="see"></span>
                         </a>
-                        <a href="#">
+                        <a href="#" data-img="4">
                             <img src="img/tmp/mi4.png" />
                             <span class="opacity_img"></span>
                             <span class="see"></span>
                         </a>
-                        <a href="#">
+                        <a href="#" data-img="5">
                             <img src="img/tmp/mi5.png" />
                             <span class="opacity_img"></span>
                             <span class="see"></span>
                         </a>
-                        <a href="#">
+                        <a href="#" data-img="6">
                             <img src="img/tmp/mi6.png" />
                             <span class="opacity_img"></span>
                             <span class="see"></span>
                         </a>
-                        <a href="#">
+                        <a href="#" data-img="7">
                             <img src="img/tmp/mi7.png" />
                             <span class="opacity_img"></span>
                             <span class="see"></span>
@@ -115,7 +170,38 @@
     </div>
     <?php include 'popup.php'?>
     <div class="img_wrapper">
+        <a href="#" class="close_img"></a>
 
+        <div class="half_opacity_right">
+            <a href="#" class="next"></a>
+        </div>
+
+
+        <div class="half_opacity_left">
+            <a href="#" class="prev"></a>
+        </div>
+        <div class="opacity"></div>
+
+        <img src="img/tmp/region/1.jpg" data-image="1"/>
+        <img src="img/tmp/region/2.jpg" data-image="2"/>
+        <img src="img/tmp/region/3.jpg" data-image="3"/>
+        <img src="img/tmp/region/4.jpg" data-image="4"/>
+        <img src="img/tmp/region/5.jpg" data-image="5"/>
+        <img src="img/tmp/region/6.jpg" data-image="6"/>
+        <img src="img/tmp/region/7.jpg" data-image="7"/>
+        <script>
+            $(function() {
+                $.preloadImages(
+                    "img/tmp/region/1.jpg",
+                    "img/tmp/region/2.jpg",
+                    "img/tmp/region/3.jpg",
+                    "img/tmp/region/4.jpg",
+                    "img/tmp/region/5.jpg",
+                    "img/tmp/region/6.jpg",
+                    "img/tmp/region/7.jpg"
+                );
+            })
+        </script>
     </div>
 </body>
 </html>

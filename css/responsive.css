@@ -19,7 +19,7 @@
         width: 150px;
     }
     .item_preview .text_slide .content .left .item div.description span {
-        font-size: 24px;
+        font-size: 24px; line-height: 30px;
     }
     .item_preview .text_slide .content .center .open_now {
         display: block;
@@ -69,7 +69,7 @@
     .item_preview .text_slide .content .left {
         margin-left: 125px;
     }
-    .inner_content {
+    .inner_content, .select_wrap {
         width: 1110px;
     }
     .left_margin {
@@ -97,13 +97,13 @@
     .travel_description {
         width: 580px;
     }
-    .travel_nav {
+    .travel_nav, .videos_nav {
         margin-right: 60px;
     }
     .travel_wrapper .read_more {
         right: 70px;
     }
-    .photos_wrap {
+    .photos_wrap, .video_wrap {
         width: 770px;
     }
     .form_contacts {

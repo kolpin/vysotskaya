@@ -12,7 +12,7 @@
                 <div class="opacity"></div>
                 <div class="inner_content order_succ">
                     <div class="left_margin">
-                        <h1 class="company_title">Компания</h1>
+                        <h1 class="company_title">Заказ оформлен</h1>
                         <div class="succ_text">
                             Поздравляем: ваш заказ — Затерянный мир Тосканы, 12—17 апреля — успешно оформлен!
                             Проверьте, пожалуйста, свою эл. почту (z.volkhovskya@gmail.com): вам было выслано письмо
