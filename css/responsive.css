@@ -142,6 +142,16 @@
         width: 560px;
         margin-left: 250px;
     }
+    .calendar_wrap {
+        width: 1093px;
+    }
+    .calendar_wrap h1.calendar_title {
+        margin: 0 0 50px 227px;
+    }
+    .cal_wrap {
+        width: 671px;
+        margin: 0 0 0 220px;
+    }
 }
 @media (min-width: 1900px)  {
     .product_by {

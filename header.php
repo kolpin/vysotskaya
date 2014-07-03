@@ -7,8 +7,8 @@
         <?php endif;?>
         <nav class="main_nav">
             <ul>
-                <li><a href="#" <?php if ($_SERVER['PHP_SELF'] == '/travel.php' || $_SERVER['PHP_SELF'] == '/photos.php' || $_SERVER['PHP_SELF'] == '/region.php' || $_SERVER['PHP_SELF'] == '/reviews.php' || $_SERVER['PHP_SELF'] == '/travel_images.php'): ?>class="active"<?php endif?>>Путешествия</a>
-                <?php if ($_SERVER['PHP_SELF'] == '/video.php' || $_SERVER['PHP_SELF'] == '/travel.php' || $_SERVER['PHP_SELF'] == '/photos.php' || $_SERVER['PHP_SELF'] == '/region.php' || $_SERVER['PHP_SELF'] == '/reviews.php' || $_SERVER['PHP_SELF'] == '/certificate.php' || $_SERVER['PHP_SELF'] == '/travel_images.php'): ?>
+                <li><a href="#" <?php if ($_SERVER['PHP_SELF'] == '/travel.php' || $_SERVER['PHP_SELF'] == '/photos.php' || $_SERVER['PHP_SELF'] == '/region.php' || $_SERVER['PHP_SELF'] == '/reviews.php' || $_SERVER['PHP_SELF'] == '/travel_images.php' || $_SERVER['PHP_SELF'] == '/calendar.php'): ?>class="active"<?php endif?>>Путешествия</a>
+                <?php if ($_SERVER['PHP_SELF'] == '/video.php' || $_SERVER['PHP_SELF'] == '/travel.php' || $_SERVER['PHP_SELF'] == '/photos.php' || $_SERVER['PHP_SELF'] == '/region.php' || $_SERVER['PHP_SELF'] == '/reviews.php' || $_SERVER['PHP_SELF'] == '/certificate.php' || $_SERVER['PHP_SELF'] == '/travel_images.php' || $_SERVER['PHP_SELF'] == '/calendar.php'): ?>
                     <ul class="subs">
                         <li>
                             <a href="#" <?php if($_SERVER['PHP_SELF'] == '/certificate.php'): ?>class="active"<?php endif; ?>>Сертификат</a>

@@ -53,6 +53,7 @@
                     <li><a href="certificate.php">Сертификат</a></li>
                     <li><a href="travel_images.php">Путешествия(Плитка)</a></li>
                     <li><a href="travel_map.php">Путешествия(Карта)</a></li>
+                    <li><a href="calendar.php">Путешествия(Календарь)</a></li>
                     <!--                    <li><a href=""></a></li>-->
                 </ul>
             </div>

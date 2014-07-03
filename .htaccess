@@ -1,3 +1,4 @@
+DirectoryIndex index.php
 # AddType TYPE/SUBTYPE EXTENSION
  
 AddType audio/mpeg mp3
