@@ -63,7 +63,7 @@
     <div class="main">
         <div class="inner">
             <?php include 'header_order.php'?>
-            <div class="inner_content">
+            <div class="inner_content ord">
                 <div class="relative">
                     <div class="left_margin"><h1 class="name_personal"><a href="#"></a>ДОП. КОНТАКТНАЯ ИНФОРМАЦИЯ</h1></div>
                     <div class="relative">

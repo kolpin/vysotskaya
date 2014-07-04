@@ -75,6 +75,15 @@
     .left_margin {
         margin-left: 250px;
     }
+    .inner_content .name_personal {
+        margin: 0 0 43px -5px;
+    }
+    .inner_content.coop .name_personal {
+        margin: 0 0 43px 0px;
+    }
+    .inner_content.ord .name_personal {
+        margin: 0 0 43px -2px;
+    }
     .personal_description {
         width: 530px;
         margin-left: 81px;
@@ -98,7 +107,7 @@
         width: 580px;
     }
     .travel_nav, .videos_nav {
-        margin-right: 60px;
+        margin-right: 45px;
     }
     .travel_wrapper .read_more {
         right: 70px;
@@ -151,6 +160,9 @@
     .cal_wrap {
         width: 671px;
         margin: 0 0 0 220px;
+    }
+    .cert_wrapper {
+        margin-right: 15px;
     }
 }
 @media (min-width: 1900px)  {

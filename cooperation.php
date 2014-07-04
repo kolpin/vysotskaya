@@ -7,7 +7,7 @@
     <div class="main">
         <div class="inner">
             <?php include 'header.php'?>
-            <div class="inner_content">
+            <div class="inner_content coop">
                 <div class="left_margin">
                     <h1 class="name_personal"><a href="#"></a>СОТРУДНИЧЕСТВО</h1>
                 </div>

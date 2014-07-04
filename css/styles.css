@@ -275,7 +275,8 @@ a#logo:hover {
 }
 .item_preview .img_slide .content .article h1 {
     font-family: "PlumbCondensed-Regular"; font-size: 36px; line-height: 36px; color: #ffffff; font-weight: normal;
-    margin: 0 0 20px 0;
+    margin: 0 0 20px -2px;
+    letter-spacing: 3px;
 }
 .item_preview .img_slide .content .article .open_new {
     position: relative;
@@ -387,7 +388,7 @@ a#logo:hover {
     display: block;
     font-family: "PlumbCondensed-Regular"; font-size: 30px; color: #5e5e5e;
     line-height: 34px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 }
 .item_preview .text_slide .content .left .item div.description div {
     display: block;
@@ -403,6 +404,7 @@ a#logo:hover {
 .item_preview .text_slide .content .center p i {
     font-family: "PTSans-Italic";
     line-height: 17px;
+    font-style: normal;
 }
 .item_preview .text_slide .content .center p i.note {
     padding-right: 10px;
@@ -496,7 +498,8 @@ a#logo:hover {
 h1.company_title {
     font-family: "PlumbCondensed-Regular"; font-size: 36px; color: #5e5e5e; font-weight: normal;
     text-transform: uppercase; line-height: 36px;
-    margin: 0 0 53px 0;
+    margin: 0 0 53px -2px;
+    letter-spacing: 3px;
 }
 .left_margin {
     margin-left: 200px;
@@ -623,8 +626,9 @@ h1.company_title {
 h1.name_personal {
      font-family: "PlumbCondensed-Regular"; font-size: 36px; color: #5e5e5e; font-weight: normal;
      text-transform: uppercase; line-height: 36px;
-     margin: 0 0 43px 0;
-     letter-spacing: 2px;
+     margin: 0 0 43px 0px;
+     letter-spacing: 3px;
+
  }
 h1.name_personal a {
     display: inline-block;
@@ -644,7 +648,7 @@ h1.name_personal a:hover {
 .personal_description {
     position: relative; float: left;
     width: 440px;
-    margin-left: 30px;
+    margin-left: 37px;
 }
 .personal_description p {
     margin: 0 0 23px 0;
@@ -981,6 +985,7 @@ h1.name_personal a:hover {
     font-family: "PlumbCondensed-Regular"; font-size: 30px; color: #a9a9a9;
     text-transform: uppercase;
     background: #f5f5f5;
+    letter-spacing: 3px;
 }
 .popup_cont_manager button i, .popup_subscribe button i {
     display: inline-block;
@@ -1652,6 +1657,7 @@ h1.name_personal a:hover {
     color: #b3b3b3;
     background: #f5f5f5;
     margin-bottom: 110px;
+    letter-spacing: 3px;
 }
 .button_next i {
     display: inline-block;
@@ -1670,8 +1676,9 @@ h1.name_personal a:hover {
 .hint {
     /*display: none;*/
     position: relative; float: right;
-    width: 170px;
+    width: 162px;
     font-size: 12px;
+    margin-right: 40px;
 }
 .hint.hint_index {
     margin-bottom: 128px;
@@ -1857,10 +1864,11 @@ h1.title_travel a:hover {
     list-style: none;
 }
 .travel_nav.dark_links ul {
-    margin-bottom: 117px;
+    margin-bottom: 67px;
 }
 .travel_nav ul li, .videos_nav ul li {
     display: block; position: relative;
+    height: 16px;
     margin-bottom: 20px;
 }
 .travel_nav ul li a, .videos_nav ul li a {
@@ -1937,7 +1945,7 @@ h1.title_travel a:hover {
 }
 .read_more {
     position: absolute;
-    bottom: 0; right: 0;
+    bottom: -20px; right: 0;
     color: #ffffff; text-decoration: none;
 }
 .read_more i {
@@ -2043,7 +2051,7 @@ h1.title_travel a:hover {
 .description_region {
     position: relative; float: left;
     width: 440px;
-    margin-left: 45px;
+    margin-left: 49px;
     margin-bottom: 50px;
 }
 .description_region i {
@@ -2284,6 +2292,7 @@ h1.title_travel a:hover {
     font-family: "PlumbCondensed-Regular"; font-size: 36px; color: #5e5e5e;
     text-align: center;
     margin-bottom: 14px;
+    line-height: 25px;
 }
 .euro {
     display: inline-block;
@@ -2611,6 +2620,7 @@ h1.title_travel a:hover {
 .cert_questions .item .title {
     position: relative;
     font-family: "PTSans-Narrow"; color: #a1a1a1; text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .fast_buy {
     position: relative; float: left;
@@ -3239,4 +3249,17 @@ ul.schedule li p {
 }
 .calendar table tr.lines td div.line_hover {
     background: #99c65f;
+}
+.ord .name_personal {
+    margin: 0 0 43px -2px;
+}
+.inner_content.order_succ .company_title {
+    margin: 0 0 53px 0;
+}
+.photos .name_personal {
+    margin: 0 0 43px 1px;
+}
+.text_hold i {
+    font-family: "PTSans-Italic";
+    font-style: normal;
 }

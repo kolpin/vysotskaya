@@ -118,7 +118,7 @@
     <div class="main">
         <div class="inner">
             <?php include 'header_order.php'?>
-            <div class="inner_content">
+            <div class="inner_content ord">
                 <div class="relative">
                     <div class="left_margin">
                         <h1 class="name_personal"><a href="#"></a>Данные карты</h1>
@@ -195,7 +195,7 @@
                             Если оплата не произошла,
                             пожалуйста, свяжитесь с вашим
                             персональным менеджером,
-                            или позвоните нам в офис —
+                            или позвоните нам в офис —<br>
                             +7 495 989-48-91. Мы поможем
                             решить все вопросы.
                         </div>

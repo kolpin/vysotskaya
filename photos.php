@@ -8,7 +8,7 @@
     <div class="main">
         <div class="inner">
             <?php include 'header.php'?>
-            <div class="inner_content">
+            <div class="inner_content photos">
                 <div class="left_margin">
                     <h1 class="name_personal"><a href="#"></a>ЗАТЕРЯННЫЙ МИР ТОСКАНЫ</h1>
                 </div>

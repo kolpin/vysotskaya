@@ -7,7 +7,7 @@
 <div class="main">
     <div class="hover">
         <?php include 'header_error.php'?>
-        <div class="inner_content">
+        <div class="inner_content coop">
             <div class="left_margin">
                 <h1 class="name_personal">ОШИБКА 504</h1>
             </div>

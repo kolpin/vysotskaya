@@ -7,7 +7,7 @@
     <div class="main">
         <div class="inner">
             <?php include 'header_order.php'?>
-            <div class="inner_content">
+            <div class="inner_content ord">
                 <div class="relative left_margin">
                     <h1 class="name_personal">Оформление заказа</h1>
                     <div class="footnote_order">
