@@ -164,6 +164,30 @@
     .cert_wrapper {
         margin-right: 15px;
     }
+
+    .cooperation .text_blocks {
+        width: 840px;
+        margin-left: 66px;
+    }
+    .cooperation .text_blocks .bl_wrap .list {
+        width: 178px;
+        margin-right: 45px;
+    }
+    .cooperation .text_blocks .bl_wrap .text {
+        width: 394px;
+        margin-top: 0;
+    }
+    .cooperation .text_blocks .bl_wrap .list_two {
+        width: 398px;
+        margin-right: 43px;
+        margin-bottom: 0;
+    }
+    .cooperation .text_blocks .bl_wrap .list_two.list_country {
+        margin-right: 95px;
+    }
+    .cooperation .text_blocks .bl_wrap .list_two.last_list {
+        width: 398px;
+    }
 }
 @media (min-width: 1900px)  {
     .product_by {

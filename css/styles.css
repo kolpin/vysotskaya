@@ -780,8 +780,8 @@ h1.name_personal a:hover {
 }
 .cooperation .text_blocks {
     position: relative; float: left;
-    width: 840px;
-    margin-left: 66px;
+    width: 640px;
+    margin-left: 14px;
 }
 .cooperation .text_blocks .bl_wrap {
     border-bottom: 1px solid #cccccc;
@@ -796,21 +796,30 @@ h1.name_personal a:hover {
     position: relative;
     font-family: "PTSans-Narrow"; color: #a1a1a1; text-transform: uppercase;
     margin-bottom: 26px;
+    letter-spacing: 1px;
 }
 .cooperation .text_blocks .bl_wrap .list {
     position: relative; float: left;
-    width: 178px;
-    margin-right: 45px;
     line-height: 1.6;
+    margin-right: 120px;
+    width: 200px;
 }
 .cooperation .text_blocks .bl_wrap .list_two {
     position: relative; float: left;
-    width: 398px;
-    margin-right: 43px;
+    /*width: 398px;*/
+    /*margin-right: 43px;*/
+    margin-bottom: 26px;
     line-height: 1.6;
 }
+
 .cooperation .text_blocks .bl_wrap .list_two.no_margin_right {
     margin-right: 0;
+}
+.cooperation .text_blocks .bl_wrap .list_two.no_margin_bottom {
+    margin-bottom: 0;
+}
+.cooperation .text_blocks .bl_wrap .list_two.last_list {
+    width: 278px;
 }
 .cooperation .text_blocks .bl_wrap .list ul, .cooperation .text_blocks .bl_wrap .list_two ul {
     margin: 0; padding: 0 0 0 20px;
@@ -818,12 +827,13 @@ h1.name_personal a:hover {
 }
 .cooperation .text_blocks .bl_wrap .text {
     position: relative; float: left;
-    width: 394px;
     line-height: 1.5;
+    width: auto;
+    margin-top: 26px;
 }
 .cooperation .text_blocks .bl_wrap .list_two.list_country {
     width: 346px;
-    margin-right: 95px;
+    margin-right: 15px;
 }
 .cooperation .text_blocks .bl_wrap .list_two .countries {
     border-top: 1px solid #cccccc;
@@ -2556,16 +2566,17 @@ h1.title_travel a:hover {
 
 .cert_description {
     position: relative; float: left;
-    width: 390px;
+    width: 383px;
     margin-left: 200px;
     margin-bottom: 37px;
 }
 .cert_description ul {
-    margin: 13px 0; padding: 0;
+    line-height: 21px;
+    margin: 0; padding: 0;
     list-style-image: url("../img/bullit.png");
 }
 .cert_description ul li {
-    margin: 0 0 13px 0;
+    margin: 7px 0 7px 0;
 }
 .cert_wrapper {
     position: relative; float: right;
@@ -2612,7 +2623,7 @@ h1.title_travel a:hover {
 .cert_questions .item {
     position: relative; float: left;
     width: 156px;
-    margin-right: 55px;
+    margin-right: 54px;
 }
 .cert_questions .item.no_margin_right {
     margin-right: 0;
@@ -2630,9 +2641,16 @@ h1.title_travel a:hover {
 }
 .fast_buy ol {
     margin: 13px 0; padding: 0;
+    list-style: none;
 }
 .fast_buy ol li {
+    position: relative;
     margin: 0 0 13px 0;
+}
+.fast_buy ol li span.list_number {
+    font-size: 12px; color: #a1a1a1;
+    margin-left: -22px;
+    padding-right: 10px;
 }
 
 .img_wrapper {

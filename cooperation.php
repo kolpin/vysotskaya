@@ -70,7 +70,7 @@
                                     <li>календарь групповых поездок, а также постоянное пополнение перечня программ и направлений.</li>
                                 </ul>
                             </div>
-                            <div class="list_two no_margin_right">
+                            <div class="list_two no_margin_right no_margin_bottom">
                                 Мы будем рады с вами сотрудничать, если вы:
                                 <ul>
                                     <li>представляете туристическое агентство в России или за её пределами;</li>
@@ -102,7 +102,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="list_two no_margin_right">
+                            <div class="list_two last_list no_margin_right">
                                 Мы будем рады с вами сотрудничать, если вы:
                                 <ul>
                                     <li>лицензированный специалист — гид, искусствовед, шеф-повар;</li>
