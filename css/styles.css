@@ -2652,7 +2652,6 @@ h1.title_travel a:hover {
     margin-left: -22px;
     padding-right: 10px;
 }
-
 .img_wrapper {
     display: none;
     position: fixed;
@@ -3280,4 +3279,65 @@ ul.schedule li p {
 .text_hold i {
     font-family: "PTSans-Italic";
     font-style: normal;
+}
+.step .inp_wrap {
+    position: relative;
+    height: 38px;
+    margin-bottom: 29px;
+}
+.popup_order .send_request {
+    margin-top: 26px;
+}
+
+.popup_bank_transfer {
+    position: absolute;
+    top: 30px; left: 50%;
+    width: 927px;
+    height: 654px;
+    margin-left: -464px;
+    background: #ffffff;
+    z-index: 101;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .2);
+}
+.popup_bank_transfer .text {
+    position: relative; float: left;
+    width: 578px;
+}
+.popup_bank_transfer .text ul {
+    list-style: none;
+    margin: 15px 0 0 0; padding: 0 0 0 15px;
+}
+.popup_bank_transfer .text ul li {
+    margin: 0 0 15px 0;
+}
+.popup_bank_transfer .links {
+    position: relative; float: right;
+    width: 180px;
+    font-size: 12px;
+}
+.popup_bank_transfer .links p {
+    margin: 0 0 40px 0;
+}
+.popup_bank_transfer .links p.first {
+    margin: 28px 0 61px 0;
+}
+.popup_bank_transfer .links div {
+    position: relative;
+    margin: 125px 0 0 0;
+}
+.popup_bank_transfer .links p a {
+    color: #5e5e5e; text-decoration: none;
+}
+.popup_bank_transfer .links p a i {
+    display: inline-block;
+    width: 12px; height: 10px;
+    background: url(../img/url.png) no-repeat;
+    margin-left: 7px;
+    vertical-align: -1px;
+}
+.popup_bank_transfer .links p a:hover {
+    color: #99c65f;
+}
+.popup_bank_transfer .links p a:hover i {
+    background-position: 0 -10px;
 }

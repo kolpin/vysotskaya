@@ -18,7 +18,7 @@
             }, function() {
                 $('.img_wrapper .opacity').stop(true, true).fadeOut(300);
             });
-            $('.img_wrapper .close_img').on("click", function() {
+            $('.img_wrapper .close_img, .opacity_popup').on("click", function() {
                 $('.opacity_popup, .img_wrapper').fadeOut();
                 return false;
             });
@@ -149,7 +149,6 @@
                         с хорошим гидом экспозицию виноградников и винотек. Там, где вино, бывает ещё и сыр;
                         например, овечий пекорино с темной корочкой, омытой молодым вином, попробовав
                         который впору и вовсе просить у местных властей временный вид на жительство.
-
                     </div>
                     <nav class="travel_nav dark_links">
                         <ul>
@@ -163,45 +162,45 @@
                         <a href="#" class="features">Почитайте отзывы<br>наших участников<i></i></a>
                     </nav>
                     <div class="clear"></div>
+                    <div class="img_wrapper">
+                        <a href="#" class="close_img"></a>
+
+                        <div class="half_opacity_right">
+                            <a href="#" class="next"></a>
+                        </div>
+
+
+                        <div class="half_opacity_left">
+                            <a href="#" class="prev"></a>
+                        </div>
+                        <div class="opacity"></div>
+
+                        <img src="img/tmp/region/1.jpg" data-image="1"/>
+                        <img src="img/tmp/region/2.jpg" data-image="2"/>
+                        <img src="img/tmp/region/3.jpg" data-image="3"/>
+                        <img src="img/tmp/region/4.jpg" data-image="4"/>
+                        <img src="img/tmp/region/5.jpg" data-image="5"/>
+                        <img src="img/tmp/region/6.jpg" data-image="6"/>
+                        <img src="img/tmp/region/7.jpg" data-image="7"/>
+                        <script>
+                            $(function() {
+                                $.preloadImages(
+                                    "img/tmp/region/1.jpg",
+                                    "img/tmp/region/2.jpg",
+                                    "img/tmp/region/3.jpg",
+                                    "img/tmp/region/4.jpg",
+                                    "img/tmp/region/5.jpg",
+                                    "img/tmp/region/6.jpg",
+                                    "img/tmp/region/7.jpg"
+                                );
+                            })
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
         <?php include 'side-panel.php'?>
     </div>
     <?php include 'popup.php'?>
-    <div class="img_wrapper">
-        <a href="#" class="close_img"></a>
-
-        <div class="half_opacity_right">
-            <a href="#" class="next"></a>
-        </div>
-
-
-        <div class="half_opacity_left">
-            <a href="#" class="prev"></a>
-        </div>
-        <div class="opacity"></div>
-
-        <img src="img/tmp/region/1.jpg" data-image="1"/>
-        <img src="img/tmp/region/2.jpg" data-image="2"/>
-        <img src="img/tmp/region/3.jpg" data-image="3"/>
-        <img src="img/tmp/region/4.jpg" data-image="4"/>
-        <img src="img/tmp/region/5.jpg" data-image="5"/>
-        <img src="img/tmp/region/6.jpg" data-image="6"/>
-        <img src="img/tmp/region/7.jpg" data-image="7"/>
-        <script>
-            $(function() {
-                $.preloadImages(
-                    "img/tmp/region/1.jpg",
-                    "img/tmp/region/2.jpg",
-                    "img/tmp/region/3.jpg",
-                    "img/tmp/region/4.jpg",
-                    "img/tmp/region/5.jpg",
-                    "img/tmp/region/6.jpg",
-                    "img/tmp/region/7.jpg"
-                );
-            })
-        </script>
-    </div>
 </body>
 </html>

@@ -33,7 +33,7 @@
             }, function() {
                 $('.video_frame .opacity').stop(true, true).fadeOut(300);
             });
-            $('.video_frame .close_img').on("click", function() {
+            $('.video_frame .close_img, .opacity_popup').on("click", function() {
                 $("#jquery_jplayer_1").jPlayer("clearMedia");
                 $('.opacity_popup, .video_frame').fadeOut();
                 return false;

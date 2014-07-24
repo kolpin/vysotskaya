@@ -193,7 +193,7 @@ $(function() {
         $(window).trigger('resize');
         return false;
     });
-    $('.close_faq').on('click', function() {
+    $('.close_faq, .opacity_popup').on('click', function() {
         $('.opacity_popup, .popup_faq').fadeOut();
         return false;
     });
@@ -201,7 +201,7 @@ $(function() {
         $('.opacity_popup, .popup_cont_manager').fadeIn();
         return false;
     });
-    $('.close_cnt_mngr').on('click', function() {
+    $('.close_cnt_mngr, .opacity_popup').on('click', function() {
         $('.opacity_popup, .popup_cont_manager').fadeOut();
         return false;
     });
@@ -209,7 +209,7 @@ $(function() {
         $('.opacity_popup, .popup_subscribe').fadeIn();
         return false;
     });
-    $('.close_subs').on('click', function() {
+    $('.close_subs, .opacity_popup').on('click', function() {
         $('.opacity_popup, .popup_subscribe').fadeOut();
         return false;
     });
@@ -217,7 +217,7 @@ $(function() {
         $('.opacity_popup, .popup_other_sites').fadeIn();
         return false;
     });
-    $('.close_other').on('click', function() {
+    $('.close_other, .opacity_popup').on('click', function() {
         $('.opacity_popup, .popup_other_sites').fadeOut();
         return false;
     });
@@ -225,7 +225,7 @@ $(function() {
         $('.opacity_popup, .popup_copy').fadeIn();
         return false;
     });
-    $('.close_copy').on('click', function() {
+    $('.close_copy, .opacity_popup').on('click', function() {
         $('.opacity_popup, .popup_copy').fadeOut();
         return false;
     });
@@ -235,7 +235,7 @@ $(function() {
         initialize();
         return false;
     });
-    $('#cont_map .close, .close_cont').on('click', function() {
+    $('#cont_map .close, .close_cont, .opacity_popup').on('click', function() {
         $('.opacity_popup, .popup_contacts').fadeOut();
         return false;
     });
@@ -243,19 +243,27 @@ $(function() {
         $('.opacity_popup, .popup_order').fadeIn();
         return false;
     });
-    $('.close_order').on('click', function() {
+    $('.close_order, .opacity_popup').on('click', function() {
         $('.opacity_popup, .popup_order').fadeOut();
+        return false;
+    });
+    $('.bank_transfer').on('click', function() {
+        $('.opacity_popup, .popup_bank_transfer').fadeIn();
+        return false;
+    });
+    $('.close_bank_transfer, .opacity_popup').on('click', function() {
+        $('.opacity_popup, .popup_bank_transfer').fadeOut();
         return false;
     });
     $('.pay_card').on('click', function() {
         $('.opacity_popup, .popup_pay_card').fadeIn();
         return false;
     });
-    $('.close_pay_card').on('click', function() {
+    $('.close_pay_card, .opacity_popup').on('click', function() {
         $('.opacity_popup, .popup_pay_card').fadeOut();
         return false;
     });
-    $('.close_order_success').on('click', function() {
+    $('.close_order_success, .opacity_popup').on('click', function() {
         $('.opacity_popup, .popup_order_success').fadeOut();
         return false;
     });

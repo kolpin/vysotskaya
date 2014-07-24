@@ -270,14 +270,52 @@
             </div>
             <div class="step last">
                 <div class="title">Шаг 3. Заполните контактную информацию</div>
-                <div><input type="text" name="user_name" value="" class="input_order" /><span> — имя и фамилия</span></div>
-                <div><input type="text" name="user_email" value="" class="input_order" /><span> — эл. почта</span></div>
-                <div><input type="text" name="phone" value="" class="input_order" /><span> — моб. телефон</span></div>
+                <div class="inp_wrap"><input type="text" name="user_name" value="" class="input_order" /><span> — имя и фамилия</span></div>
+                <div class="inp_wrap"><input type="text" name="user_email" value="" class="input_order" /><span> — эл. почта</span></div>
+                <div class="inp_wrap"><input type="text" name="phone" value="" class="input_order" /><span> — моб. телефон</span></div>
             </div>
         </div>
         <button class="send_request">ОТПРАВИТЬ ЗАЯВКУ<i></i></button>
     </form>
 </div>
+
+<div class="popup popup_bank_transfer">
+    <div class="padding_form">
+        <h1 class="title_popup"><a href="#" class="close_bank_transfer"></a>ОПЛАТА БАНКОВСКИМ ПЕРЕВОДОМ</h1>
+        <div class="relative">
+            <div class="text">
+                Мы гарантируем полную безопасность вашего интернет-платежа:
+                <ul>
+                    <li>оплата происходит через сайт компании Uniteller (официальный сервис-провайдер Visa, Mastercard, Worldwide, JCB и Diners club);</li>
+                    <li>процессинг сертифицирован стандартом безопасности данных индустрии платёжных карт PCI DSS;</li>
+                    <li>применяется интеллектуальная система мониторинга мошеннических операций и протокол 3-D Secure (дополнительный уровень безопасности банковских карт);</li>
+                    <li>передача информации происходит по технологии шифрования SSL, по закрытым банковским каналам, имеющим наивысший уровень надёжности (передача ваших данных третьим лицам исключена).</li>
+                </ul>
+                Процесс онлайн-оплаты по шагам:
+                <ul>
+                    <li>ваш персональный менеджер подтверждает вашу заявку на путешествие — вам приходит письмо на эл. почту, в котором содержится ссылка;</li>
+                    <li>вы переходите по ссылке и попадаете на защищенную платёжную страницу нашего сайта, вводите данные своей банковской карты для оплаты заказа;</li>
+                    <li>если карта поддерживает протокол 3-D Secure, то вы проходите доп. проверку на странице банка, который выпустил вашу карту (проверка — это чаще всего пароль из SMS или карта переменных кодов);</li>
+                    <li>оплата успешно произошла — вам приходит на эл. почту письмо с подтверждением совершённого заказа.</li>
+                </ul>
+            </div>
+            <div class="links">
+                <p class="first"><a href="#">Сайт компании Uniteller<i></i></a></p>
+                <p><a href="#">PCI DSS на Википедии<i></i></a></p>
+                <p><a href="#">3-D Secure на Википедии<i></i></a></p>
+                <div>
+                    Если оплата не произошла,
+                    свяжитесь с вашим персональным
+                    менеджером, или позвоните нам
+                    в офис +7 495 989-48-91. Мы
+                    поможем решить все вопросы.
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
 <div class="popup popup_pay_card">
     <div class="padding_form">
         <h1 class="title_popup"><a href="#" class="close_pay_card"></a>ОПЛАТА КАРТОЙ ОНЛАЙН</h1>
