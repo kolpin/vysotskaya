@@ -9,8 +9,9 @@
             $('.mini_photos a').on("click", function() {
                 $('.opacity_popup').show();
                 current_img = $(this).data('img');
-                showMiniGallery(current_img);
+                //showMiniGallery(current_img);
                 $('.img_wrapper').fadeIn();
+                $('.jcarousel-pagination-small a[href=#'+current_img+']').trigger("click");
                 return false;
             });
             $('.img_wrapper .close_img').hover(function() {
@@ -22,24 +23,39 @@
                 $('.opacity_popup, .img_wrapper').fadeOut();
                 return false;
             });
-            $('.img_wrapper .next').on("click", function() {
-                if (!click) return false;
-                click = false;
-                current_img++;
 
-                if (current_img > $('.img_wrapper img').length) current_img = 1;
-                showMiniGallery(current_img);
-                return false;
+            $('.jcarousel_small').jcarousel({
+                wrap: 'circular',
+                step: 1
             });
-            $('.img_wrapper .prev').on("click", function() {
-                if (!click) return false;
-                click = false;
-                current_img--;
 
-                if (current_img < 1) current_img = $('.img_wrapper img').length;
-                showMiniGallery(current_img);
-                return false;
+            $('.img_wrapper .prev').jcarouselControl({
+                target: '-=1'
             });
+
+            $('.img_wrapper .next').jcarouselControl({
+                target: '+=1'
+            });
+            $('.jcarousel-pagination-small').jcarouselPagination();
+
+//            $('.img_wrapper .next').on("click", function() {
+//                if (!click) return false;
+//                click = false;
+//                current_img++;
+//
+//                if (current_img > $('.img_wrapper img').length) current_img = 1;
+//                showMiniGallery(current_img);
+//                return false;
+//            });
+//            $('.img_wrapper .prev').on("click", function() {
+//                if (!click) return false;
+//                click = false;
+//                current_img--;
+//
+//                if (current_img < 1) current_img = $('.img_wrapper img').length;
+//                showMiniGallery(current_img);
+//                return false;
+//            });
         });
         function showMiniGallery(img) {
             $('.img_wrapper img').removeClass('active');
@@ -154,7 +170,7 @@
                         <ul>
                             <li><a href="#" class="program"><i></i>Программа</a></li>
                             <li><a href="#" class="photos"><i></i>Фотографии 14</a></li>
-                            <li><a href="#" class="region active"><i></i>Регион</a></li>
+                            <li><span class="region active"><i></i>Регион</span></li>
                             <li><a href="#" class="reviews"><i></i>Отзывы</a></li>
                             <li><a href="#" class="cost"><i></i>Стоимость</a></li>
                             <li class="empty"></li>
@@ -174,14 +190,18 @@
                             <a href="#" class="prev"></a>
                         </div>
                         <div class="opacity"></div>
-
-                        <img src="img/tmp/region/1.jpg" data-image="1"/>
-                        <img src="img/tmp/region/2.jpg" data-image="2"/>
-                        <img src="img/tmp/region/3.jpg" data-image="3"/>
-                        <img src="img/tmp/region/4.jpg" data-image="4"/>
-                        <img src="img/tmp/region/5.jpg" data-image="5"/>
-                        <img src="img/tmp/region/6.jpg" data-image="6"/>
-                        <img src="img/tmp/region/7.jpg" data-image="7"/>
+                        <div class="jcarousel_small">
+                            <ul>
+                                <li><img src="img/tmp/region/1.jpg" data-image="1"/></li>
+                                <li><img src="img/tmp/region/2.jpg" data-image="2"/></li>
+                                <li><img src="img/tmp/region/3.jpg" data-image="3"/></li>
+                                <li><img src="img/tmp/region/4.jpg" data-image="4"/></li>
+                                <li><img src="img/tmp/region/5.jpg" data-image="5"/></li>
+                                <li><img src="img/tmp/region/6.jpg" data-image="6"/></li>
+                                <li><img src="img/tmp/region/7.jpg" data-image="7"/></li>
+                            </ul>
+                        </div>
+                        <p class="jcarousel-pagination-small"></p>
                         <script>
                             $(function() {
                                 $.preloadImages(

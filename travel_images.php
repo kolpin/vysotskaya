@@ -92,7 +92,7 @@
         <div class="relative">
             <div class="select_wrap">
                 <ul class="select_nav">
-                    <li><a href="#" class="img active"></a></li>
+                    <li><span class="img active"></span></li>
                     <li><a href="#" class="map"></a></li>
                     <li><a href="#" class="calendar"></a></li>
                 </ul>

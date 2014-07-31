@@ -83,7 +83,7 @@
                 <div class="left_margin">
                     <h1 class="name_personal">Видео</h1>
                 </div>
-                <div class="relative" style="overflow: hidden">
+                <div class="relative" style="">
                     <div class="video_wrap">
                         <a href="#" class="fly-box" data-video="1" data-m4v="/videos/m4v/Big_Buck_Bunny_Trailer.m4v" data-flv="" data-ogv="/videos/ogv/Big_Buck_Bunny_Trailer.ogv" data-webmv="/videos/webm/Big_Buck_Bunny_Trailer.webm" data-poster="/videos/poster/1v.png">
                             <img src="img/tmp/i1.png" alt="" />
@@ -153,7 +153,7 @@
                     </div>
                     <nav class="videos_nav">
                         <ul>
-                            <li><a href="#" class="active">Все 17</a></li>
+                            <li><span class="active">Все 17</span></li>
                             <li><a href="#">Венеция 8</a></li>
                             <li><a href="#">Тоскана 8</a></li>
                         </ul>

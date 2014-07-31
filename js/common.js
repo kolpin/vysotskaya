@@ -1,5 +1,6 @@
 var currSlide = 1,
     click = true,
+    rotate = true,
     current_address = 'от Газетного пер., 12';
 
 $(function() {
@@ -25,6 +26,7 @@ $(function() {
         var cnt = parseInt($('.order_form .count_people').text());
         cnt--;
         if (cnt <= 0) cnt = 1;
+        if (cnt == 1) $('.order_form .minus').addClass('passive');
         $('.order_form .count_people').text(cnt);
         $('input[name=count_people]').val(cnt);
         return false;
@@ -32,6 +34,7 @@ $(function() {
     $('.order_form .plus').on("click", function() {
         var cnt = parseInt($('.order_form .count_people').text());
         cnt++;
+        if (cnt > 1) $('.order_form .minus').removeClass('passive');
         $('.order_form .count_people').text(cnt);
         $('input[name=count_people]').val(cnt);
         return false;
@@ -70,15 +73,35 @@ $(function() {
     /* Certificate Avers/Revers */
 
     $('.refresh_cert').on("click", function() {
-        $('.cert_img img.visible').fadeOut(300, function() {
-            $(this).removeClass('visible');
-        });
-        $('.cert_img img:not(.visible)').fadeIn(300, function() {
-            $(this).addClass('visible');
-            var text = $('.cert_img img.visible').data('text');
-            $('.cert_wrapper .text span').hide();
-            $('.cert_wrapper .text span.text_'+text).show();
-        });
+        if (rotate) {
+            rotate = false;
+            Rotate('.refresh_cert');
+            setTimeout(function() {
+                $('.cert_wrapper .text span').hide();
+                if ($('.cert_img').hasClass('avers')) {
+                    $('.cert_img').removeClass('avers').addClass('revers');
+                    $('.cert_wrapper .text span.text_revers').fadeIn();
+                }
+                else {
+                    $('.cert_img').removeClass('revers').addClass('avers');
+                    $('.cert_wrapper .text span.text_avers').fadeIn();
+                }
+            }, 600);
+            $('.cert_img').rotate3Di(
+                180,
+                1200,
+                {
+                    direction: 'clockwise',
+                    sideChange: function(front) {
+                    },
+                    complete: function() {
+                        $('.refresh_cert').rotate(0);
+                        RotateStop();
+                        rotate = true;
+                    }
+                }
+            );
+        }
         return false;
     });
 
@@ -247,14 +270,6 @@ $(function() {
         $('.opacity_popup, .popup_order').fadeOut();
         return false;
     });
-    $('.bank_transfer').on('click', function() {
-        $('.opacity_popup, .popup_bank_transfer').fadeIn();
-        return false;
-    });
-    $('.close_bank_transfer, .opacity_popup').on('click', function() {
-        $('.opacity_popup, .popup_bank_transfer').fadeOut();
-        return false;
-    });
     $('.pay_card').on('click', function() {
         $('.opacity_popup, .popup_pay_card').fadeIn();
         return false;
@@ -338,8 +353,20 @@ $(function() {
     });
 
 });
+var rotateInterval;
+function Rotate(element) {
+    var angle=0;
+    rotateInterval = setInterval(function(){
+        angle-=3;
+        $(element).rotate(angle);
+    },10);
+}
+function RotateStop() {
+    clearInterval(rotateInterval);
+}
 
 function refreshPreview(curr) {
+    Rotate('.refresh');
     cropToFit();
     $('.hide_hover').fadeOut(300, function() {
         $('.item_preview').stop().animate({opacity: 0}, 1000);
@@ -347,6 +374,8 @@ function refreshPreview(curr) {
             $('.hide_hover').fadeIn(300);
             $('.item_preview').removeClass('active');
             $('.ip_'+curr).addClass('active');
+            $('.refresh').rotate(0);
+            RotateStop();
         });
     });
 }

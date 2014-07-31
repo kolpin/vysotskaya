@@ -27,9 +27,9 @@
                 </div>
                 <div class="cert_wrapper">
                     <a href="#" class="refresh_cert"></a>
-                    <div class="cert_img">
-                        <img src="img/cert_avers.png" class="visible" data-text="avers" />
-                        <img src="img/cert_revers.png" data-text="revers"/>
+                    <div class="cert_img avers">
+<!--                        <img src="img/cert_avers.png" class="visible" data-text="avers" />-->
+<!--                        <img src="img/cert_revers.png" data-text="revers"/>-->
                     </div>
                     <div class="text">
                         Внешний вид сертификата:
@@ -43,11 +43,11 @@
                         <div class="title">Когда?</div>
                         Вы можете поздравить
                         своих любимых, близких,
-                        друзей или коллег<br>
-                        с любым праздником<br>
-                        и важным событием<br>
+                        друзей или коллег
+                        с любым праздником
+                        и важным событием
                         в жизни. Новый год, день
-                        рождения, 8 марта, 14<br>
+                        рождения, 8 марта, 14
                         и 23 февраля, свадебное
                         путешествие и пр.
                     </div>
@@ -65,7 +65,7 @@
                     </div>
                     <div class="item">
                         <div class="title">Стоимость?</div>
-                        Номинал выбираете<br>
+                        Номинал выбираете
                         вы сами. Как правило,
                         номинал равен
                         стоимости путешествия
@@ -73,16 +73,16 @@
                         случае получателю
                         сертификата будет
                         предложено доплатить
-                        разницу для участия<br>
+                        разницу для участия
                         в программе.
                     </div>
                     <div class="item no_margin_right">
                         <div class="title">Срок?</div>
-                        Срок действия<br>
-                        может быть любым,<br>
-                        в соответствии<br>
+                        Срок действия
+                        может быть любым,
+                        в соответствии
                         с вашими пожеланиями.
-                        Сертификат может<br>
+                        Сертификат может
                         быть с открытой датой
                         активации.
                     </div>

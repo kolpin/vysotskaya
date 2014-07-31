@@ -96,6 +96,9 @@ input, textarea, button, a {
     background: url(../img/copy.png);
     cursor: pointer;
 }
+.side-panel .copy:hover {
+    background-position: 0 -14px;
+}
 .side-panel ul li span.faq_error {
     display: block; position: relative;
     width: 17px; height: 16px;
@@ -156,7 +159,13 @@ a#logo:hover {
 .header_main nav.main_nav > ul li a {
     font-family: "PTSans-NarrowBold"; font-size: 14px; color: #5e5e5e;
     text-decoration: none; text-transform: uppercase; line-height: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+}
+.header_main nav.main_nav > ul li > span {
+    font-family: "PTSans-NarrowBold"; font-size: 14px; color: #5e5e5e;
+    text-decoration: none; text-transform: uppercase; line-height: 14px;
+    letter-spacing: 2px;
+    color: #99c65f;
 }
 /*.header_main nav.main_nav ul li.subs a {*/
     /*font-family: "PTSans-Regular";*/
@@ -174,7 +183,15 @@ a#logo:hover {
 .header_main nav.main_nav > ul li ul.subs li a {
     font-family: "PTSans-Regular";
     text-transform: capitalize;
+    letter-spacing: 0;
 }
+.header_main nav.main_nav > ul li ul.subs li > span {
+    font-family: "PTSans-Regular";
+    text-transform: capitalize;
+    letter-spacing: 0;
+    color: #99c65f;
+}
+
 .header_main nav.main_nav > ul li a:hover, .header_main nav.main_nav > ul li a.active {
     color: #99c65f;
 }
@@ -302,6 +319,11 @@ a#logo:hover {
 .item_preview .img_slide .content .refresh:hover {
     background-position: 0 -30px;
 }
+.item_preview .img_slide .content .refresh.spin {
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg); /* IE 9 */
+    -webkit-transform:rotate(360deg); /* Opera, Chrome, and Safari */
+}
 .item_preview .img_slide .slide_right {
     position: absolute;
     right: 50px;
@@ -379,6 +401,7 @@ a#logo:hover {
     border-bottom: 1px solid #cccccc;
     padding: 0 0 26px 0;
     margin: 0 0 26px 88px;
+    letter-spacing: 1px;
 }
 .item_preview .text_slide .content .left .item.last div.description {
     border-bottom: none;
@@ -920,6 +943,7 @@ h1.name_personal a:hover {
 .faq_rel ul li span {
     display: block;
     font-family: "PTSans-Narrow"; font-size: 14px; color: #a1a1a1; text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /*contacts manager*/
@@ -968,6 +992,9 @@ h1.name_personal a:hover {
     width: 324px; height: 38px;
     font-family: "PTSans-Regular"; font-size: 14px; color: #5e5e5e;
 }
+.padding_form div input:focus {
+    background: #f5f5f5;
+}
 .padding_form div textarea {
     border: 1px solid #cccccc;
     display: block; float: left;
@@ -975,6 +1002,9 @@ h1.name_personal a:hover {
     padding: 14px 17px;
     width: 324px; height: 116px;
     font-family: "PTSans-Regular"; font-size: 14px; color: #5e5e5e;
+}
+.padding_form div textarea:focus {
+    background: #f5f5f5;
 }
 .padding_form div input.error, .padding_form div textarea.error {
     border: 1px solid #f54b4c;
@@ -1404,6 +1434,7 @@ h1.name_personal a:hover {
     position: relative;
     line-height: 23px;
     font-family: "PTSans-Narrow"; font-size: 14px; text-transform: uppercase; color: #a1a1a1;
+    letter-spacing: 1px;
 }
 #cont_text .padding .contacts .left .address a {
     text-decoration: none; color: #a1a1a1;
@@ -1691,10 +1722,15 @@ h1.name_personal a:hover {
     margin-right: 40px;
 }
 .hint.hint_index {
-    margin-bottom: 128px;
+    margin-bottom: 132px;
+    margin-top: 13px;
 }
 .hint a {
     color: #5e5e5e; text-decoration: none;
+}
+.hint i {
+    font-style: normal;
+    font-family: "PTSans-Italic";
 }
 .hint a i {
     background: url("../img/url.png") no-repeat;
@@ -1867,6 +1903,7 @@ h1.title_travel a:hover {
 .travel_nav, .videos_nav {
     position: relative; float: right;
     width: 134px;
+    margin-right: 15px;
 }
 .travel_nav ul, .videos_nav ul {
     display: block; position: relative;
@@ -1888,66 +1925,66 @@ h1.title_travel a:hover {
 .travel_nav.dark_links ul li a, .videos_nav ul li a {
     color: #5e5e5e;
 }
-.travel_nav ul li a i {
+.travel_nav ul li a i, .travel_nav ul li span i {
     display: inline-block;
     width: 19px;
     margin-right: 11px;
 }
-.travel_nav.dark_links ul li a:hover, .travel_nav.dark_links ul li a.active,  .videos_nav ul li a:hover,  .videos_nav ul li a.active {
+.travel_nav.dark_links ul li a:hover, .travel_nav.dark_links ul li .active,  .videos_nav ul li a:hover,  .videos_nav ul li .active {
     color: #99c65f;
 }
-.travel_nav ul li a:hover, .travel_nav ul li a.active {
+.travel_nav ul li a:hover, .travel_nav ul li .active {
     color: #aef058;
 }
-.travel_nav ul li a.program i {
+.travel_nav ul li .program i {
     vertical-align: -4px;
     height: 16px;
     background: url(../img/progr_ico.png) no-repeat;
 }
-.travel_nav.dark_links ul li a.program i {
+.travel_nav.dark_links ul li .program i {
     background: url(../img/dark_progr_ico.png) no-repeat;
 }
-.travel_nav ul li a.photos i {
+.travel_nav ul li .photos i {
     height: 14px;
     background: url(../img/photo_ico.png) no-repeat;
 }
-.travel_nav.dark_links ul li a.photos i {
+.travel_nav.dark_links ul li .photos i {
     background: url(../img/dark_photo_ico.png) no-repeat;
 }
-.travel_nav ul li a.region i {
+.travel_nav ul li .region i {
     vertical-align: -4px;
     height: 18px;
     background: url(../img/region_ico.png) no-repeat;
 }
-.travel_nav.dark_links ul li a.region i {
+.travel_nav.dark_links ul li .region i {
     background: url(../img/dark_region_ico.png) no-repeat;
 }
-.travel_nav ul li a.reviews i {
+.travel_nav ul li .reviews i {
     vertical-align: -2px;
     height: 15px;
     background: url(../img/reviews_ico.png) no-repeat;
 }
-.travel_nav.dark_links ul li a.reviews i {
+.travel_nav.dark_links ul li .reviews i {
     background: url(../img/dark_reviews_ico.png) no-repeat;
 }
-.travel_nav ul li a.cost i {
+.travel_nav ul li .cost i {
     vertical-align: -4px;
     height: 18px;
     background: url(../img/cost_ico.png) no-repeat;
 }
-.travel_nav.dark_links ul li a.cost i {
+.travel_nav.dark_links ul li .cost i {
     background: url(../img/dark_cost_ico.png) no-repeat;
 }
-.travel_nav ul li a.program:hover i, .travel_nav ul li a.program.active i {
+.travel_nav ul li .program:hover i, .travel_nav ul li .program.active i {
     background-position: 0 -16px;
 }
-.travel_nav ul li a.photos:hover i, .travel_nav ul li a.photos.active i {
+.travel_nav ul li a.photos:hover i, .travel_nav ul li .photos.active i {
     background-position: 0 -14px;
 }
-.travel_nav ul li a.region:hover i, .travel_nav ul li a.region.active i, .travel_nav ul li a.cost:hover i, .travel_nav ul li a.cost.active i {
+.travel_nav ul li a.region:hover i, .travel_nav ul li .region.active i, .travel_nav ul li .cost:hover i, .travel_nav ul li .cost.active i {
     background-position: 0 -18px;
 }
-.travel_nav ul li a.reviews:hover i, .travel_nav ul li a.reviews.active i {
+.travel_nav ul li .reviews:hover i, .travel_nav ul li .reviews.active i {
     background-position: 0 -15px;
 }
 .travel_nav ul li.empty {
@@ -2157,7 +2194,7 @@ h1.title_travel a:hover {
 .photo_slider {
     display: none;
     position: absolute;
-    top: 83px; left: -999999px;
+    top: 83px; left: 0;
     overflow: hidden;
     background: #fff;
 }
@@ -2381,6 +2418,7 @@ h1.title_travel a:hover {
     position: relative;
     font-family: "PTSans-Narrow"; color: #a1a1a1; text-transform: uppercase;
     margin-bottom: 26px;
+    letter-spacing: 1px;
 }
 .popup_order {
     display: none;
@@ -2442,6 +2480,7 @@ h1.title_travel a:hover {
 .popup_order .step .tours.active {
     color: #fff;
     background: #99c65f;
+    cursor: default;
 }
 .popup_order .step .tours.active .apply_tour {
     background-position: 16px 0;
@@ -2465,6 +2504,10 @@ h1.title_travel a:hover {
 }
 .popup_order .step .minus:hover, .popup_order .step .plus:hover {
     background-position: 0 -30px;
+}
+.popup_order .step .minus.passive, .popup_order .step .minus.passive:hover {
+    cursor: default;
+    background-position: 0 -60px;
 }
 .popup_order button {
     border: none;
@@ -2494,7 +2537,7 @@ h1.title_travel a:hover {
 
 .popup_pay_card {
     position: absolute;
-    top: 30px; left: 50%;
+    top: 27px; left: 50%;
     width: 927px;
     height: 654px;
     margin-left: -464px;
@@ -2505,13 +2548,14 @@ h1.title_travel a:hover {
 .popup_pay_card .text {
     position: relative; float: left;
     width: 578px;
+    line-height: 18px;
 }
 .popup_pay_card .text ul {
     list-style: none;
     margin: 15px 0 0 0; padding: 0 0 0 15px;
 }
 .popup_pay_card .text ul li {
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
 }
 .popup_pay_card .links {
     position: relative; float: right;
@@ -2519,14 +2563,15 @@ h1.title_travel a:hover {
     font-size: 12px;
 }
 .popup_pay_card .links p {
-    margin: 0 0 40px 0;
+    margin: 0 0 29px 0;
 }
 .popup_pay_card .links p.first {
-    margin: 28px 0 61px 0;
+    margin: 35px 0 50px 0;
 }
 .popup_pay_card .links div {
     position: relative;
-    margin: 125px 0 0 0;
+    margin: 109px 0 0 0;
+    line-height: 1.6;
 }
 .popup_pay_card .links p a {
     color: #5e5e5e; text-decoration: none;
@@ -2589,6 +2634,12 @@ h1.title_travel a:hover {
     height: 118px;
     margin-bottom: 17px;
 }
+.cert_wrapper .cert_img.avers {
+    background: url(../img/cert_avers.png) no-repeat;
+}
+.cert_wrapper .cert_img.revers {
+    background: url(../img/cert_revers.png) no-repeat;
+}
 .cert_wrapper .cert_img img {
     display: none; position: absolute;
     top: 0; left: 0;
@@ -2624,6 +2675,7 @@ h1.title_travel a:hover {
     position: relative; float: left;
     width: 156px;
     margin-right: 54px;
+    line-height: 20px;
 }
 .cert_questions .item.no_margin_right {
     margin-right: 0;
@@ -2831,23 +2883,23 @@ h1.title_travel a:hover {
     display: block; float: left;
     margin-right: 28px;
 }
-.select_wrap ul.select_nav li a {
+.select_wrap ul.select_nav li a, .select_wrap ul.select_nav li span {
     display: block; position: relative;
     height: 14px;
 }
-.select_wrap ul.select_nav li a.img {
+.select_wrap ul.select_nav li .img {
     width: 14px;
     background: url(../img/select_img.png) no-repeat;
 }
-.select_wrap ul.select_nav li a.map {
+.select_wrap ul.select_nav li .map {
     width: 14px;
     background: url(../img/select_map.png) no-repeat;
 }
-.select_wrap ul.select_nav li a.calendar {
+.select_wrap ul.select_nav li .calendar {
     width: 16px;
     background: url(../img/select_calendar.png) no-repeat;
 }
-.select_wrap ul.select_nav li a:hover, .select_wrap ul.select_nav li a.active {
+.select_wrap ul.select_nav li a:hover, .select_wrap ul.select_nav li .active {
     background-position: 0 -14px;
 }
 
@@ -3191,7 +3243,7 @@ ul.schedule li p {
     width: 129px;
     font-size: 12px; color: #5e5e5e; text-decoration: none; line-height: 16px;
 }
-.cal_wrap .dates_travel ul li .date_travel:hover {
+.cal_wrap .dates_travel ul li .date_travel:hover, .cal_wrap .dates_travel ul li .date_travel.active {
     color: #99c65f;
 }
 .cal_wrap .dates_travel ul li .title_travel {
@@ -3257,6 +3309,7 @@ ul.schedule li p {
 .calendar table tr.lines td div {
     position: relative;
     height: 7px;
+    cursor: pointer;
 }
 .calendar table tr.lines td div.gray {
     background: #cdcdcd;
@@ -3341,3 +3394,11 @@ ul.schedule li p {
 .popup_bank_transfer .links p a:hover i {
     background-position: 0 -10px;
 }
+.popup_pay_card .padding_form .relative .text i {
+    font-style: normal;
+    font-family: "PTSans-Italic";
+}
+.popup_pay_card .links p a span {
+    font-family: "PTSans-Italic";
+}
+

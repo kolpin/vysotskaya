@@ -12,6 +12,16 @@
                 else $('.data_card_form .button_next').removeClass('success');
                 $(this).removeClass('error');
             });
+            $('.four_symbol, .six_symbol').bind("change keyup input click", function() {
+                if (this.value.match(/[^0-9]/g)) {
+                    this.value = this.value.replace(/[^0-9]/g, '');
+                }
+            });
+            $('.input_contacts[name=name_card]').bind("change keyup input click", function() {
+                if (this.value.match(/[^a-zA-Z\s]/g)) {
+                    this.value = this.value.replace(/[^a-zA-Z\s]/g, '');
+                }
+            });
             $('.data_card_form').on("submit", function() {
                 return validateFormDataCard();
             });
@@ -170,7 +180,7 @@
                                         <td class="title_td">— срок действия карты (месяц и год)</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" class="input_contacts" name="name_card" /></td>
+                                        <td><input type="text" class="input_contacts" name="name_card" style="text-transform: uppercase" /></td>
                                         <td class="title_td">— держатель карты (латиницей)</td>
                                     </tr>
                                     <tr>
@@ -178,7 +188,7 @@
                                         <td class="title_td">— код безопасности (три цифры)</td>
                                     </tr>
                                 </table>
-                                <button class="button_next">Далее<i></i></button>
+                                <button class="button_next">Оплатить<i></i></button>
                             </form>
                         </div>
                         <div class="hint data_card hr">

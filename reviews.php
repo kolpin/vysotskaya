@@ -91,7 +91,7 @@
                             <li><a href="#" class="program"><i></i>Программа</a></li>
                             <li><a href="#" class="photos"><i></i>Фотографии 14</a></li>
                             <li><a href="#" class="region"><i></i>Регион</a></li>
-                            <li><a href="#" class="reviews active"><i></i>Отзывы</a></li>
+                            <li><span class="reviews active"><i></i>Отзывы</span></li>
                             <li><a href="#" class="cost"><i></i>Стоимость</a></li>
                             <li class="empty"></li>
                         </ul>

@@ -9,7 +9,17 @@
                 $('.'+line).addClass('line_hover');
             }, function() {
                 $('.calendar table tr.lines td div').removeClass('line_hover');
-            })
+            });
+
+            $('.calendar table tr.lines td div').hover(function() {
+                var line = $(this).attr('class');
+                line = line.replace("gray", "").replace("light_", "").replace(" ", "");
+                $('.'+line).addClass('line_hover');
+                $('.cal_wrap .dates_travel ul li .date_travel[data-line='+line+']').addClass('active');
+            }, function() {
+                $('.calendar table tr.lines td div').removeClass('line_hover');
+                $('.cal_wrap .dates_travel ul li .date_travel').removeClass('active');
+            });
         })
     </script>
 </head>
@@ -22,7 +32,7 @@
                 <ul class="select_nav">
                     <li><a href="#" class="img"></a></li>
                     <li><a href="#" class="map"></a></li>
-                    <li><a href="#" class="calendar active"></a></li>
+                    <li><span class="calendar active"></span></li>
                 </ul>
             </div>
             <div class="relative calendar_wrap">

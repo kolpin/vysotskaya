@@ -113,7 +113,7 @@
             <div class="select_wrap">
                 <ul class="select_nav">
                     <li><a href="#" class="img"></a></li>
-                    <li><a href="#" class="map active"></a></li>
+                    <li><span class="map active"></span></li>
                     <li><a href="#" class="calendar"></a></li>
                 </ul>
             </div>

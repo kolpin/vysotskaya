@@ -30,7 +30,9 @@
                             </div>
                             <nav class="travel_nav">
                                 <ul>
-                                    <li><a href="#" class="program active"><i></i>Программа</a></li>
+                                    <li>
+                                        <span class="program active"><i></i>Программа</span>
+                                    </li>
                                     <li><a href="#" class="photos"><i></i>Фотографии 14</a></li>
                                     <li><a href="#" class="region"><i></i>Регион</a></li>
                                     <li><a href="#" class="reviews"><i></i>Отзывы</a></li>

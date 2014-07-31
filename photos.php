@@ -12,7 +12,7 @@
                 <div class="left_margin">
                     <h1 class="name_personal"><a href="#"></a>ЗАТЕРЯННЫЙ МИР ТОСКАНЫ</h1>
                 </div>
-                <div class="relative" style="overflow: hidden">
+                <div class="relative" style="">
                     <div class="photos_wrap">
                         <a href="#" class="fly-box" data-img="1">
                             <img src="img/tmp/i1.png" alt="" />
@@ -83,7 +83,7 @@
                     <nav class="travel_nav dark_links">
                         <ul>
                             <li><a href="#" class="program"><i></i>Программа</a></li>
-                            <li><a href="#" class="photos active"><i></i>Фотографии 13</a></li>
+                            <li><span class="photos active"><i></i>Фотографии 13</span></li>
                             <li><a href="#" class="region"><i></i>Регион</a></li>
                             <li><a href="#" class="reviews"><i></i>Отзывы</a></li>
                             <li><a href="#" class="cost"><i></i>Стоимость</a></li>
@@ -108,20 +108,24 @@
 
 
                 <div class="opacity"></div>
-
-                <img src="img/tmp/photos/1.jpg" width="1500" height="1150" class="images" data-img="1" />
-                <img src="img/tmp/photos/2.jpg" width="2500" height="1667" class="images" data-img="2" />
-                <img src="img/tmp/photos/3.jpg" width="2500" height="1423" class="images" data-img="3" />
-                <img src="img/tmp/photos/4.jpg" width="1600" height="1065" class="images" data-img="4" />
-                <img src="img/tmp/photos/5.jpg" width="2500" height="1654" class="images" data-img="5" />
-                <img src="img/tmp/photos/6.jpg" width="1900" height="1225" class="images" data-img="6" />
-                <img src="img/tmp/photos/7.jpg" width="2500" height="1675" class="images" data-img="7" />
-                <img src="img/tmp/photos/8.jpg" width="2500" height="1664" class="images" data-img="8" />
-                <img src="img/tmp/photos/9.jpg" width="2500" height="1652" class="images" data-img="9" />
-                <img src="img/tmp/photos/10.jpg" width="1900" height="1188" class="images" data-img="10" />
-                <img src="img/tmp/photos/11.jpg" width="2500" height="1424" class="images" data-img="11" />
-                <img src="img/tmp/photos/12.jpg" width="1900" height="2020" class="images" data-img="12" />
-                <img src="img/tmp/photos/13.jpg" width="1900" height="1188" class="images" data-img="13" />
+                <div class="jcarousel_full">
+                    <ul>
+                        <li><img src="img/tmp/photos/1.jpg" width="1500" height="1150" class="images" data-img="1" /></li>
+                        <li><img src="img/tmp/photos/2.jpg" width="2500" height="1667" class="images" data-img="2" /></li>
+                        <li><img src="img/tmp/photos/3.jpg" width="2500" height="1423" class="images" data-img="3" /></li>
+                        <li><img src="img/tmp/photos/4.jpg" width="1600" height="1065" class="images" data-img="4" /></li>
+                        <li><img src="img/tmp/photos/5.jpg" width="2500" height="1654" class="images" data-img="5" /></li>
+                        <li><img src="img/tmp/photos/6.jpg" width="1900" height="1225" class="images" data-img="6" /></li>
+                        <li><img src="img/tmp/photos/7.jpg" width="2500" height="1675" class="images" data-img="7" /></li>
+                        <li><img src="img/tmp/photos/8.jpg" width="2500" height="1664" class="images" data-img="8" /></li>
+                        <li><img src="img/tmp/photos/9.jpg" width="2500" height="1652" class="images" data-img="9" /></li>
+                        <li><img src="img/tmp/photos/10.jpg" width="1900" height="1188" class="images" data-img="10" /></li>
+                        <li><img src="img/tmp/photos/11.jpg" width="2500" height="1424" class="images" data-img="11" /></li>
+                        <li><img src="img/tmp/photos/12.jpg" width="1900" height="2020" class="images" data-img="12" /></li>
+                        <li><img src="img/tmp/photos/13.jpg" width="1900" height="1188" class="images" data-img="13" /></li>
+                    </ul>
+                </div>
+                <p class="jcarousel-pagination"></p>
                 <script>
                     $(function() {
                         $.preloadImages(
