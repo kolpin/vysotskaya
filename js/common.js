@@ -4,6 +4,24 @@ var currSlide = 1,
     current_address = 'от Газетного пер., 12';
 
 $(function() {
+
+    $('.price_hold .to_order').on("mouseover", function() {
+        var tag_i = $(this).find('i');
+        tag_i.stop(true, true).animate({'margin-left': 16+'px'}, 200, function() {
+            tag_i.stop(true, true).animate({'margin-left': 8+'px'}, 200);
+        });
+    });
+
+    $('.further').on("mouseover", function() {
+        var tag_i = $(this).find('i');
+        tag_i.stop(true, true).animate({'margin-left': 32+'px'}, 200, function() {
+            tag_i.stop(true, true).animate({'margin-left': 14+'px'}, 200);
+        });
+    });
+
+
+    $('#mobile_phone').mask("+7 999 9999999");
+
     $('.item_preview:first').addClass('active');
 
     $(window).on('resize', function () {
@@ -71,38 +89,55 @@ $(function() {
     })
 
     /* Certificate Avers/Revers */
+    $.support.css3d = supportsCSS3D();
+    var container = $('.cert_img');
 
-    $('.refresh_cert').on("click", function() {
-        if (rotate) {
-            rotate = false;
-            Rotate('.refresh_cert');
-            setTimeout(function() {
-                $('.cert_wrapper .text span').hide();
-                if ($('.cert_img').hasClass('avers')) {
-                    $('.cert_img').removeClass('avers').addClass('revers');
-                    $('.cert_wrapper .text span.text_revers').fadeIn();
-                }
-                else {
-                    $('.cert_img').removeClass('revers').addClass('avers');
-                    $('.cert_wrapper .text span.text_avers').fadeIn();
-                }
-            }, 600);
-            $('.cert_img').rotate3Di(
-                180,
-                1200,
-                {
-                    direction: 'clockwise',
-                    sideChange: function(front) {
-                    },
-                    complete: function() {
-                        $('.refresh_cert').rotate(0);
-                        RotateStop();
-                        rotate = true;
-                    }
-                }
-            );
+    $('.refresh_cert').on("click", function(e) {
+        Rotate('.refresh_cert');
+        container.toggleClass('flipped');
+        $('.cert_wrapper .text span').hide();
+        if (container.hasClass('flipped')) $('.cert_wrapper .text span.text_revers').fadeIn();
+        else $('.cert_wrapper .text span.text_avers').fadeIn();
+        if(!$.support.css3d){
+            $('.avers').toggle();
         }
-        return false;
+        setTimeout(function() {
+            $('.refresh_cert').rotate(0);
+            RotateStop();
+        }, 800)
+        e.preventDefault();
+
+
+//        if (rotate) {
+//            rotate = false;
+//            Rotate('.refresh_cert');
+//            setTimeout(function() {
+//                $('.cert_wrapper .text span').hide();
+//                if ($('.cert_img').hasClass('avers')) {
+//                    $('.cert_img').removeClass('avers').addClass('revers');
+//                    $('.cert_wrapper .text span.text_revers').fadeIn();
+//                }
+//                else {
+//                    $('.cert_img').removeClass('revers').addClass('avers');
+//                    $('.cert_wrapper .text span.text_avers').fadeIn();
+//                }
+//            }, 600);
+//            $('.cert_img').rotate3Di(
+//                180,
+//                1200,
+//                {
+//                    direction: 'clockwise',
+//                    sideChange: function(front) {
+//                    },
+//                    complete: function() {
+//                        $('.refresh_cert').rotate(0);
+//                        RotateStop();
+//                        rotate = true;
+//                    }
+//                }
+//            );
+//        }
+//        return false;
     });
 
     /* Edit address */
@@ -271,6 +306,8 @@ $(function() {
         return false;
     });
     $('.pay_card').on('click', function() {
+        var scroll = $('body').scrollTop();
+        $('.popup_pay_card').css('top', scroll+27);
         $('.opacity_popup, .popup_pay_card').fadeIn();
         return false;
     });
@@ -353,6 +390,19 @@ $(function() {
     });
 
 });
+function supportsCSS3D() {
+    var props = [
+        'perspectiveProperty', 'WebkitPerspective', 'MozPerspective'
+    ], testDom = document.createElement('a');
+
+    for(var i=0; i<props.length; i++){
+        if(props[i] in testDom.style){
+            return true;
+        }
+    }
+
+    return false;
+}
 var rotateInterval;
 function Rotate(element) {
     var angle=0;

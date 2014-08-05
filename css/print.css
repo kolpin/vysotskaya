@@ -64,17 +64,37 @@
         border-bottom: 1px solid #cccccc;
         position: relative;
         height: 20px; line-height: 28px;
-        font-size: 11px; color: #000;
+        font-size: 13px; color: #5e5e5e;
+        font-family: 'Courier New', Monospace;
     }
+
     .title-params .down {
         font-size: 9px;
     }
     .data {
         border-collapse: collapse;
-        border: 1px solid #cccccc;
     }
-    .data tr td{
+    .data tr td {
         border: 1px solid #cccccc;
         vertical-align: top;
+    }
+    .cn {
+        font-family: 'Courier New' , Monospace;
+        font-size: 13px; color: #5e5e5e;
+    }
+    .data tr td.nbt {
+        border-top: none;
+    }
+    .data tr td.nbr {
+        border-right: none;
+    }
+    .data tr td.nbb {
+        border-bottom: none;
+    }
+    .data tr td.nbl {
+        border-left: none;
+    }
+    .data tr td.vam {
+        vertical-align: middle;
     }
 }

@@ -9,6 +9,11 @@
             item = 0;
 
         $(function() {
+            $('.video_frame .close_img, .opacity_popup').on("click", function() {
+                $("#jquery_jplayer_1").jPlayer("clearMedia");
+                $('.opacity_popup, .video_frame').fadeOut();
+                return false;
+            });
             $("#jquery_jplayer_1").jPlayer({
                 swfPath: "/js",
                 supplied: "webmv, ogv, m4v, flv",
@@ -28,16 +33,13 @@
                 playItemVideo(current_video);
                 return false;
             });
+
             $('.video_frame .close_img').hover(function() {
-                $('.video_frame .opacity').stop(true, true).fadeIn(300);
+                $('.opacity_video').stop(true, true).fadeIn(300);
             }, function() {
-                $('.video_frame .opacity').stop(true, true).fadeOut(300);
+                $('.opacity_video').stop(true, true).fadeOut(300);
             });
-            $('.video_frame .close_img, .opacity_popup').on("click", function() {
-                $("#jquery_jplayer_1").jPlayer("clearMedia");
-                $('.opacity_popup, .video_frame').fadeOut();
-                return false;
-            });
+
             $(this).keydown(function(eventObject){
                 if (eventObject.which == 27) {
                     $("#jquery_jplayer_1").jPlayer("clearMedia");
@@ -173,8 +175,6 @@
         <div class="half_opacity_left">
             <a href="#" class="prev"></a>
         </div>
-        <div class="opacity"></div>
-
         <div id="jp_container_1" class="jp-video">
             <div id="jquery_jplayer_1" class="jp-jplayer"></div>
             <div class="jp-interface">
@@ -197,7 +197,7 @@
                 <a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen"></a>
             </div>
         </div>
-
+        <div class="opacity opacity_video"></div>
     </div>
 </body>
 </html>

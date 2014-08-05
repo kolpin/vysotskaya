@@ -20,14 +20,14 @@
                 });
             }).trigger("resize");
             $('.drag_image').draggable({
-                cursor: 'move',
+                cursor: "grab",
                 containment: 'parent'
 
             });
             $('#map_iceland').mouseover(function() {
                 $('.hover_country.ice').css({'backgroundPosition': '0 0', 'color': '#99c65f'});
             }).mouseout(function() {
-                $('.hover_country.ice').css({'backgroundPosition': '0 -100px', 'color': '#5e5e5e'});
+                $('.hover_country.ice').css({'backgroundPosition': '0 -63px', 'color': '#5e5e5e'});
             });
             $('#map_sweden').mouseover(function() {
                 $('.hover_country.swe').css({'backgroundPosition': '0 0', 'color': '#99c65f'});
@@ -111,7 +111,7 @@
         <?php include 'header.php'?>
         <div class="relative">
             <div class="select_wrap">
-                <ul class="select_nav">
+                <ul class="select_nav" style="z-index: 99">
                     <li><a href="#" class="img"></a></li>
                     <li><span class="map active"></span></li>
                     <li><a href="#" class="calendar"></a></li>
@@ -126,7 +126,7 @@
                         <a href="#" class="hover_country bri"><span>Велико-<br>британия</span></a>
                         <a href="#" class="hover_country bel"><span>Бельгия</span></a>
                         <a href="#" class="hover_country geo"><span>Грузия</span></a>
-                        <a href="#" class="hover_country slo"><span>Словения -<br>Хорватия</span></a>
+                        <a href="#" class="hover_country slo"><span>Словения —<br>Хорватия</span></a>
                         <a href="#" class="hover_country ita"><span>Италия</span></a>
                         <a href="#" class="hover_country fra"><span>Франция</span></a>
                         <a href="#" class="hover_country spa"><span>Испания</span></a>
@@ -142,8 +142,7 @@
                         <div class="names_country tur">Турция</div>
                         <div class="names_country arm">Армения</div>
                         <div class="names_country gonk">Гонконг</div>
-
-                        <img src="img/map_image.png" style="opacity: 0" usemap="#map">
+                        <img src="img/map_image_real.png" style="opacity: 0" usemap="#map">
                         <map name="map">
                             <area class="poly" id="map_iceland" shape="poly" coords="236, 95, 240, 89, 235, 86, 233, 79, 228, 79, 221, 82, 200, 74, 193, 78, 193, 71, 191, 60, 179, 60, 174, 66, 169, 67, 180, 76, 179, 82, 165, 79, 170, 86, 177, 92, 179, 98, 170, 98, 165, 98, 169, 105, 177, 107, 178, 115, 195, 124, 200, 120, 207, 124, 218, 119, 225, 122, 232, 118, 238, 114, 239, 109, 240, 107" />
                             <area class="poly" id="map_sweden" shape="poly" coords="472, 53, 488, 65, 495, 81, 498, 94, 501, 107, 494, 111, 488, 111, 481, 123, 485, 134, 479, 148, 454, 176, 453, 190, 453, 203, 469, 216, 469, 222, 465, 224, 466, 229, 453, 239, 450, 266, 456, 261, 448, 281, 442, 283, 429, 282, 427, 294, 417, 296, 414, 291, 411, 284, 411, 279, 415, 276, 403, 249, 400, 238, 401, 231, 406, 229, 406, 220, 412, 215, 416, 211, 411, 197, 417, 190, 411, 182, 411, 160, 410, 158, 414, 149, 418, 142, 424, 144, 428, 140, 424, 134, 430, 123, 432, 113, 431, 106, 436, 107, 438, 101, 443, 95, 444, 89, 441, 83, 447, 80, 447, 74, 453, 72, 454, 67, 463, 66, 469, 63" />
@@ -158,6 +157,7 @@
                             <area class="poly" id="map_marokko" shape="poly" coords="131, 598, 140, 596, 145, 607, 150, 611, 156, 606, 170, 610, 174, 607, 190, 618, 191, 628, 188, 640, 191, 645, 191, 650, 187, 655, 166, 654, 162, 657, 156, 657, 153, 662, 155, 670, 134, 669, 129, 680, 120, 682, 104, 680, 89, 682, 69, 687, 66, 698, 1, 696, 18, 692, 46, 685, 59, 672, 56, 661, 64, 645, 73, 642, 69, 636, 96, 624, 106, 624, 124, 610" />
                             <area class="poly" id="map_israel" shape="poly" coords="738, 642, 733, 670, 735, 674, 746, 691, 745, 681, 747, 668, 746, 661, 743, 666, 740, 666, 741, 658, 740, 651, 745, 651, 747, 646, 744, 641" />
                         </map>
+
                     </div>
                 </div>
             </div>

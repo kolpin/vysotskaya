@@ -83,7 +83,7 @@
                         </div>
                         <div class="various_payment">
                             <p>Варианты оплаты:</p>
-                            <p><a href="#" class="bank_transfer" target="_blank">банковский перевод<i></i></a></p>
+                            <p><a href="#" class="bank_transfer">банковский перевод<i></i></a></p>
                             <p><a href="#" class="pay_card">картой онлайн<i></i></a></p>
                             <p>картой в офисе</p>
                             <p>наличными в офисе</p>

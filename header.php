@@ -1,4 +1,4 @@
-<header>
+<header <?php if ($_SERVER['PHP_SELF'] == '/travel_map.php'): ?>class="map_header"<?php endif;?>>
     <div class="header_main">
         <?php if ($_SERVER['PHP_SELF'] == '/main.php'): ?>
             <div id="logo"></div>
@@ -13,7 +13,7 @@
                     <?php else: ?>
                         <a href="#" <?php if ($_SERVER['PHP_SELF'] == '/cost.php' || $_SERVER['PHP_SELF'] == '/photos.php' || $_SERVER['PHP_SELF'] == '/region.php' || $_SERVER['PHP_SELF'] == '/reviews.php' || $_SERVER['PHP_SELF'] == '/travel_images.php' || $_SERVER['PHP_SELF'] == '/calendar.php' || $_SERVER['PHP_SELF'] == '/travel_map.php'): ?>class="active"<?php endif?>>Путешествия</a>
                     <?php endif?>
-                <?php if ($_SERVER['PHP_SELF'] == '/video.php' || $_SERVER['PHP_SELF'] == '/travel.php' || $_SERVER['PHP_SELF'] == '/photos.php' || $_SERVER['PHP_SELF'] == '/region.php' || $_SERVER['PHP_SELF'] == '/reviews.php' || $_SERVER['PHP_SELF'] == '/certificate.php' || $_SERVER['PHP_SELF'] == '/travel_images.php' || $_SERVER['PHP_SELF'] == '/calendar.php' || $_SERVER['PHP_SELF'] == '/travel_map.php'): ?>
+                <?php if ($_SERVER['PHP_SELF'] == '/video.php' || $_SERVER['PHP_SELF'] == '/travel.php' || $_SERVER['PHP_SELF'] == '/photos.php' || $_SERVER['PHP_SELF'] == '/region.php' || $_SERVER['PHP_SELF'] == '/reviews.php' || $_SERVER['PHP_SELF'] == '/certificate.php' || $_SERVER['PHP_SELF'] == '/travel_images.php' || $_SERVER['PHP_SELF'] == '/calendar.php' || $_SERVER['PHP_SELF'] == '/travel_map.php' || $_SERVER['PHP_SELF'] == '/cost.php'): ?>
                     <ul class="subs">
                         <li>
                             <?php if($_SERVER['PHP_SELF'] == '/certificate.php'): ?>

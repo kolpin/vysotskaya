@@ -89,7 +89,7 @@
                             <li><a href="#" class="cost"><i></i>Стоимость</a></li>
                             <li class="empty"></li>
                         </ul>
-                        <a href="#" class="features">Познакомьтесь<br>с особенностями региона<i></i></a>
+                        <div class="photos_reg"><a href="#" class="features">Познакомьтесь<br>с особенностями региона<i></i></a></div>
                     </nav>
                     <div class="clear"></div>
                 </div>

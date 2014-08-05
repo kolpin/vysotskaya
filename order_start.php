@@ -55,7 +55,7 @@
                             <td>+7 906 606-32-07</td>
                         </tr>
                     </table>
-                    <a href="#" class="further">Далее<i></i></a>
+                    <a href="#" class="further active">Далее<i></i></a>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@
                 else $('.data_card_form .button_next').removeClass('success');
                 $(this).removeClass('error');
             });
-            $('.four_symbol, .six_symbol').bind("change keyup input click", function() {
+            $('.four_symbol, .six_symbol, .three_symbol').bind("change keyup input click", function() {
                 if (this.value.match(/[^0-9]/g)) {
                     this.value = this.value.replace(/[^0-9]/g, '');
                 }

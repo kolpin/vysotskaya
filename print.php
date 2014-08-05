@@ -21,59 +21,91 @@
             </div>
             <table class="data">
                 <tr>
-                    <td width="64" height="61">Сумма прописью</td>
-                    <td colspan="4">Двести восемьдесят пять тысяч рублей 00 копеек</td>
+                    <td width="64" height="61" class="nbl nbt">Сумма прописью</td>
+                    <td colspan="4" class="nbt nbr">
+                        <div class="cn">Двести восемьдесят пять тысяч рублей 00 копеек</div>
+                    </td>
                 </tr>
                 <tr>
-                    <td colspan="2" width="150" height="18">ИНН 7729047418</td>
+                    <td colspan="2" width="150" height="18" class="nbl vam cn">ИНН 7729047418</td>
                     <td width="150">&nbsp;</td>
                     <td width="63" height="37" rowspan="2">Сумма</td>
-                    <td width="190" rowspan="2">285000-00</td>
+                    <td width="190" rowspan="2" class="nbr"><div class="cn">285 000-00</div></td>
                 </tr>
                 <tr>
-                    <td colspan="3" rowspan="2">
-                        Илларионов Виктор Сергеевич<br>Плательщик
+                    <td colspan="3" rowspan="2" class="nbl">
+                        <div class="cn">Илларионов Виктор Сергеевич</div>Плательщик
                     </td>
                 </tr>
                 <tr>
                     <td height="37">Сч. №</td>
-                    <td>40802810000001000156</td>
+                    <td class="nbr">
+                        <div class="cn">40802810000001000156</div>
+                    </td>
                 </tr>
                 <tr>
-                    <td colspan="3" rowspan="2">
-                        ООО КБ "Московский" г. Москва<br>
+                    <td colspan="3" rowspan="2" class="nbl">
+                        <div class="cn">ООО КБ "Московский" г. Москва</div>
                         Банк плательщика
                     </td>
                     <td height="18">БИК</td>
-                    <td>044585491</td>
+                    <td class="nbr">
+                        <div class="cn">044585491</div>
+                    </td>
                 </tr>
                 <tr>
                     <td height="37">Сч. №</td>
-                    <td>30101810900000000491</td>
+                    <td class="nbr"><div class="cn">30101810900000000491</div></td>
                 </tr>
                 <tr>
-                    <td colspan="3" rowspan="2">
-                        Банк "Возрождение" (АОА) г. Москва<br>
+                    <td colspan="3" rowspan="2" class="nbl">
+                        <div class="cn">Банк "Возрождение" (АОА) г. Москва</div>
                         Банк получателя
                     </td>
                     <td height="18">БИК</td>
-                    <td rowspan="4">044525181<br>30101810900000000181<br>40702810400200143613</td>
+                    <td rowspan="4" class="nbr">
+                        <div class="cn" style="margin: 2px 0 5px 0">044525181</div>
+                        <div class="cn" style="margin: 0 0 23px 0">30101810900000000181</div>
+                        <div class="cn">40702810400200143613</div>
+                    </td>
                 </tr>
                 <tr>
                     <td height="37">Счет</td>
                 </tr>
                 <tr>
-                    <td colspan="2" height="18">ИНН 7702810506</td>
-                    <td>КПП 770201001</td>
+                    <td colspan="2" height="18" class="nbl vam cn">ИНН 7702810506</td>
+                    <td class="vam cn">КПП 770201001</td>
                     <td rowspan="2" height="56">Сч. №</td>
                 </tr>
                 <tr>
-                    <td colspan="3" rowspan="4">
-                        ООО "Кулинарные путешествия Юлии Высоцкой"<br>Получатель
+                    <td colspan="3" rowspan="4" class="nbl nbb">
+                        <div class="cn">ООО "Кулинарные путешествия<br>Юлии Высоцкой"</div>
+                        Получатель
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" rowspan="3" height="56">1</td>
+                    <td colspan="2" rowspan="3" height="56" class="nbb nbr">
+                        <table class="data">
+                            <tr>
+                                <td width="63" class="nbt nbl">Вид оп.</td>
+                                <td><div class="cn">01</div></td>
+                                <td>Срок плат.</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="nb">Наз. пл.</td>
+                                <td>&nbsp;</td>
+                                <td>Очер. плат.</td>
+                                <td><div class="cn">5</div></td>
+                            </tr>
+                            <tr>
+                                <td>Код</td>
+                                <td>&nbsp;</td>
+                                <td>Рез. поле</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
                 </tr>
             </table>
         </div>

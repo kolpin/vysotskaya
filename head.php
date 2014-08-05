@@ -17,7 +17,7 @@
 
 
 
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>-->
 <script src="js/jQueryRotateCompressed.2.2.js"></script>
 <script>
     var map;
@@ -42,6 +42,7 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <link rel="stylesheet" href="css/ie7.css">
 <![endif]-->
+<script src='js/jquery.maskedinput.min.js'></script>
 <script src='js/common.js'></script>
 <script src="js/photos.js"></script>
 <script src='js/fly.js'></script>
